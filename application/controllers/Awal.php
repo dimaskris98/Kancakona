@@ -22,4 +22,9 @@ class Awal extends CI_Controller {
 	{
 		$this->load->view('profil');
 	}
+	
+	public function auth()
+	{
+		$this->load->view('v_awal');
+	}
 }

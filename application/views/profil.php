@@ -751,15 +751,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <div class="modal-content">
           <div class="modal-body">
             <div class="row">
-              <div class="col-lg-12">
-                <div class="bg-image" style="background-image: url(<?php echo base_url('assets/images/reservation_1.jpg')?>);"></div>
-              </div>
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <small>CLOSE </small><span aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="mb-4">Login As Admin</h1>  
-                <form action="#" method="post">
+                <form action="Awal/auth" method="post">
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="m_fname">Username</label>
@@ -800,13 +797,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?php echo base_url('assets/js/jquery.waypoints.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/owl.carousel.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js')?>"></script>
-
     <script src="<?php echo base_url('assets/js/bootstrap-datepicker.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
-    
     <script src="<?php echo base_url('assets/js/jquery.animateNumber.min.js')?>"></script>
-    
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="<?php echo base_url('assets/js/go')?>js/google-map.js"></script>
 
