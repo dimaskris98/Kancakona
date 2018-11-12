@@ -760,14 +760,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="m_fname">Username</label>
-                      <input type="text" class="form-control" id="m_fname">
+                      <input type="text" class="form-control" name="username">
                     </div>
                     <div class="col-md-12 form-group">
                       <label for="m_lname">Password</label>
-                      <input type="text" class="form-control" id="m_lname">
+                      <input type="password" class="form-control" name="password">
                     </div>
                     <div class="col-md-12 form-group">
-                      <input type="submit" value="Masuk" class="btn btn-info" style="width: 100%" id="m_submit">
+                      <input type="submit" value="Masuk" name="submit" class="btn btn-info" style="width: 100%" id="m_submit">
                     </div>
                   </div>
                 </form>

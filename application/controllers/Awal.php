@@ -2,6 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Awal extends CI_Controller {
+	
+	function __construct(){
+		parent::__construct();
+		$this->load->model('m_login');
+	}
 
 	/**
 	 * Index Page for this controller.
@@ -25,6 +30,21 @@ class Awal extends CI_Controller {
 	
 	public function auth()
 	{
-		$this->load->view('v_awal');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$where = array(
+					'Username' => $username,
+					'Password' => $password
+					);
+		
+		$cek = $this->m_login->cek_login('user',$where)->num_rows();
+		if($cek){
+			$this->session->set_userdata('admin',$username);
+			redirect("Admin");
+		}else{
+			echo "goblok";
+			var_dump($cek);
+		}
+		
 	}
 }
