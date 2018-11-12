@@ -4,7 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
 	function __construct() {
 		parent::__construct();
-		
+			$this->load->view('admin/head');
+			$this->load->view('admin/navigation');
+			$this->load->view('admin/content');
 		
 		
 	}
@@ -12,10 +14,7 @@ class Admin extends CI_Controller {
 	public function index(){
 		$cek = $this->session->userdata('admin');
 		if(isset($cek)){
-			$this->load->view('admin/head');
-			$this->load->view('admin/navigation');
-			$this->load->view('admin/content');
-			$this->load->view('admin/beranda');
+			$this->load->view('admin/konten/beranda');
 			$this->load->view('admin/footer');
 		}else{
 			echo '
@@ -27,6 +26,11 @@ class Admin extends CI_Controller {
 		}
 		
 		
+	}
+	
+	public function event(){
+			$this->load->view('admin/konten/event');
+			$this->load->view('admin/footer');
 	}
 	public function logout(){
 		header("Location: ".base_url());
