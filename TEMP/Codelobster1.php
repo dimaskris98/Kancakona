@@ -19,3 +19,12 @@
 <script src="<?php echo base_url('assets/admin/js/matrix.form_common.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/wysihtml5-0.3.0.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/bootstrap-wysihtml5.js')?>"></script>
+
+<script src="<?php echo base_url('assets/admin/js/jquery.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/jquery.ui.custom.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/bootstrap.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/jquery.uniform.js')?>"></script>
+<script src="<?php echo base_url('assets/admin/js/select2.min.js')?>"></script>  
+<script src="<?php echo base_url('assets/admin/js/jquery.dataTables.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/matrix.js')?>"></script>
+<script src="<?php echo base_url('assets/admin/js/matrix.tables.js')?>"></script>

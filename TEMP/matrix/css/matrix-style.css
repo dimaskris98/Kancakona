@@ -1037,6 +1037,9 @@ div.dataTables_wrapper .ui-widget-header {
 .table.with-check tr th:first-child, .table.with-check tr td:first-child {
 	width: 10px;
 }
+.table.with-opsi tr th:last-child,.table.with-opsi tr td:last-child{
+	width: 40px;
+}
 .table.with-check tr th:first-child i {
 	margin-top: -2px;
 	opacity: 0.6;
@@ -1158,6 +1161,7 @@ form {
 	text-align:center;
 	z-index:9999;
 }
+
 #lightbox p {
 	position:absolute;
 	top:10px;

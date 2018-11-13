@@ -6,16 +6,18 @@
             <input type="checkbox" id="title-checkbox" name="title-checkbox" />
             </span>
             <h5>Data Post Berita</h5>
+            <button class=" btn btn-mini btn-info buttons">Buat Berita Baru</button>
           </div>
           <div class="widget-content nopadding">
+        	
             <table class="table table-bordered data-table with-check">
               <thead>
                 <tr>
                   <th><i class="icon-resize-vertical"></th>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
+                  <th>Tanggal</th>
+                  <th>Judul</th>
+                  <th>Isi</th>
+                  <th class="opsi" style="width: 100px">Opsi</th>
                 </tr>
               </thead>
               <tbody>
@@ -25,7 +27,10 @@
                   <td>Internet
                     Explorer 4.0</td>
                   <td>Win 95+</td>
-                  <td class="center">4</td>
+                  <td class="opsi">
+                  	<button class="btn btn-mini btn-info">Edit</button>
+                  	<button class="btn btn-mini btn-danger">Hapus</button></button>
+                  </td>
                 </tr>
                 <tr class="gradeC">
                 <td><input type="checkbox" /></td>
