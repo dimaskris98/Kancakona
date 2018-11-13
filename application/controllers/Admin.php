@@ -37,6 +37,14 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/konten/newEvent');
 			$this->load->view('admin/footer');
 	}
+	public function menu(){
+			$this->load->view('admin/konten/menu');
+			$this->load->view('admin/footer');
+	}
+	public function saran(){
+			$this->load->view('admin/konten/saran');
+			$this->load->view('admin/footer');
+	}
 	public function logout(){
 		header("Location: ".base_url());
 		$this->session->sess_destroy();
