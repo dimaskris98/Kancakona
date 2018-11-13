@@ -7,6 +7,8 @@
 
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/bootstrap.min.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/bootstrap-responsive.min.css')?>" />
+<link rel="stylesheet" href="<?php echo base_url('assets/admin/css/uniform.css')?>" />
+<link rel="stylesheet" href="<?php echo base_url('assets/admin/css/select2.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/fullcalendar.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/matrix-style.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/matrix-media.css')?>" />
@@ -14,8 +16,8 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/jquery.gritter.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/colorpicker.css')?>" />
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/datepicker.css')?>" />
-<link rel="stylesheet" href="<?php echo base_url('assets/admin/css/select2.css')?>" />
-<link rel="stylesheet" href="<?php echo base_url('assets/admin/css/uniform.css')?>" />
+
+
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/bootstrap-wysihtml5.css')?>" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
