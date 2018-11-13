@@ -8,7 +8,14 @@
 <script src="<?php echo base_url('assets/admin/js/excanvas.min.js')?>"></script>
 <script src="<?php echo base_url('assets/admin/js/matrix.popover.js')?>"></script> 
 
-
+<script src="<?php echo base_url('assets/admin/js/jquery.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/jquery.ui.custom.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/bootstrap.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/jquery.uniform.js')?>"></script>
+<script src="<?php echo base_url('assets/admin/js/select2.min.js')?>"></script>  
+<script src="<?php echo base_url('assets/admin/js/jquery.dataTables.min.js')?>"></script> 
+<script src="<?php echo base_url('assets/admin/js/matrix.js')?>"></script>
+<script src="<?php echo base_url('assets/admin/js/matrix.tables.js')?>"></script>
 <script src="<?php echo base_url('assets/admin/js/matrix.calendar.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/matrix.interface.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/matrix.chat.js')?>"></script> 
