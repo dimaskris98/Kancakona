@@ -6,7 +6,7 @@
             <input type="checkbox" id="title-checkbox" name="title-checkbox" />
             </span>
             <h5>Data Post Berita</h5>
-            <button class=" btn btn-mini btn-info buttons">Buat Berita Baru</button>
+            <a href="<?php echo base_url('Admin/newEvent'); ?>"><button  class=" btn btn-mini btn-info buttons">Buat Berita Baru</button></a>
           </div>
           <div class="widget-content nopadding">
         	
@@ -106,6 +106,7 @@
     </div>
     </div>
     </div>
+    
 <script src="<?php echo base_url('assets/admin/js/jquery.min.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/jquery.ui.custom.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/bootstrap.min.js')?>"></script> 
