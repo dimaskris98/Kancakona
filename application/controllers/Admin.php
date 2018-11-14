@@ -12,18 +12,15 @@ class Admin extends CI_Controller {
 	}
 	
 	public function index(){
-		//$cek = $this->session->userdata('admin');
-		//if(isset($cek)){
+		if ($this->session->userdata('admin') == TRUE){
 			$this->load->view('admin/konten/beranda');
-			$this->load->view('admin/footer');
-		//}else{
-			//echo '
-		//		<script>
-				//	alert("Silahkan Login kembali")
-			//		history.
-				//</script>';
-		//	header("Location: ".base_url());
-	//	}
+		$this->load->view('admin/footer');
+		}
+		else{
+			echo '<script type="text/javascript">
+					alert("hai");
+					</script>';
+			header("Location: ".base_url());	}
 		
 		
 	}
