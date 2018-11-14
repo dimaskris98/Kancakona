@@ -25,6 +25,15 @@ class Admin extends CI_Controller {
 				//</script>';
 		//	header("Location: ".base_url());
 	//	}
+		$this->load->view('admin/footer');
+		}
+		else{
+			echo '<script type="text/javascript">
+					alert("hai");
+					</script>';
+			header("Location: ".base_url());	}
+		
+		
 	}
 	
 	public function event(){
