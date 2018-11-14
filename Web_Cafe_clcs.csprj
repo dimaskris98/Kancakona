@@ -86,26 +86,26 @@
 </treenode>
 <treenode node="VIEWPATH;PHP:PHP Word;E:\School Project\htdocs\Kancakona\index.php;f9;282;17;282;;;;vpos;;v;;r$view_folder;;d-1,-1;;b0,0;;m">
 </treenode>
-<treenode node="Admin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f0;3;1;51;;;;vpos;;vCI_Controller;;c;;r;;d34,3;;b0,0;;m">
-<treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f1;4;2;11;;;;vpos;;v;;r;;d24,4;;b0,0;;m">
+<treenode node="Admin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f0;3;1;52;;;;vpos;;vCI_Controller;;c;;r;;d34,3;;b0,0;;m">
+<treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f1;4;2;12;;;;vpos;;v;;r;;d24,4;;b0,0;;m">
 </treenode>
-<treenode node="event;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;30;2;33;;;;vpos;;v;;r;;d24,30;;b1,0;;m">
+<treenode node="event;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;29;2;34;;;;vpos;;v;;r;;d24,29;;b1,0;;m">
 </treenode>
-<treenode node="index;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;13;2;28;;;;vpos;;v;;r;;d24,13;;b1,0;;m">
+<treenode node="index;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;14;2;27;;;;vpos;;v;;r;;d24,14;;b1,0;;m">
 </treenode>
-<treenode node="logout;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;47;2;50;;;;vpos;;v;;r;;d25,47;;b1,0;;m">
+<treenode node="logout;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;48;2;51;;;;vpos;;v;;r;;d25,48;;b1,0;;m">
 </treenode>
-<treenode node="menu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;39;2;42;;;;vpos;;v;;r;;d23,39;;b1,0;;m">
+<treenode node="menu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;40;2;43;;;;vpos;;v;;r;;d23,40;;b1,0;;m">
 </treenode>
-<treenode node="newEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;35;2;38;;;;vpos;;v;;r;;d27,35;;b1,0;;m">
+<treenode node="newEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;36;2;39;;;;vpos;;v;;r;;d27,36;;b1,0;;m">
 </treenode>
-<treenode node="saran;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;43;2;46;;;;vpos;;v;;r;;d24,43;;b1,0;;m">
+<treenode node="saran;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;44;2;47;;;;vpos;;v;;r;;d24,44;;b1,0;;m">
 </treenode>
 </treenode>
-<treenode node="AksiAdmin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f0;3;1;12;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f0;3;1;36;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f0;3;1;35;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f0;3;1;35;;;;vpos;;vCI_Controller;;c;;r;;d38,3;;b0,0;;m">
-<treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f1;4;2;7;;;;vpos;;v;;r;;d24,4;;b0,0;;m">
+<treenode node="AksiAdmin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f0;3;1;12;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f0;3;1;36;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f0;3;1;35;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f0;3;1;43;;;;vpos;;vCI_Controller;;c;;r;;d38,3;;b0,0;;m">
+<treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f1;4;2;7;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f1;4;2;7;;;;vpos;;v;;r;;d24,4;;b0,0;;m">
 </treenode>
-<treenode node="postEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f8;9;2;11;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f8;9;2;35;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f8;9;2;35;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f8;9;2;34;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f8;9;2;34;;;;vpos;;v;;r;;d28,9;;b1,0;;m">
+<treenode node="postEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Codelobster0.php;f8;9;2;11;;E:\School Project\htdocs\Kancakona\application\controllers\Aksi Admin.php;f8;9;2;35;;E:\School Project\htdocs\Kancakona\application\controllers\Aksiadmin.php;f8;9;2;34;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f8;9;2;42;;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f8;9;2;42;;;;vpos;;v;;r;;d28,9;;b1,0;;m">
 </treenode>
 </treenode>
 <treenode node="Awal;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f0;3;1;49;;;;vpos;;vCI_Controller;;c;;r;;d33,3;;b0,0;;m">
@@ -3336,6 +3336,12 @@
 <treenode node="read_dir;PHP:Function Name;E:\School Project\htdocs\Kancakona\system\libraries\Zip.php;f8;343;2;382;;;;vpos;;vbool;;r Definition     read_dir($path, $preserve_filepath = TRUE, $root_path = NULL)  Description      Read a directory and add it to the zip.  Parameters:     string $path - path to source directory     bool $preserve_filepath     string $root_path;;d1,344;;b1,0;;mstring $path;;pbool $preserve_filepath;;pstring $root_path;;p">
 </treenode>
 <treenode node="read_file;PHP:Function Name;E:\School Project\htdocs\Kancakona\system\libraries\Zip.php;f8;304;2;327;;;;vpos;;vbool;;r Definition     read_file($path, $archive_filepath = FALSE)  Description      Read the contents of a file and add it to the zip  Parameters:     string $path     bool $archive_filepath;;d1,305;;b1,0;;mstring $path;;pbool $archive_filepath;;p">
+</treenode>
+</treenode>
+<treenode node="M_aksiadmin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php;f0;1;1;10;;;;vpos;;vCI_Model;;c;;r;;d35,1;;b0,0;;m">
+<treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php;f1;2;2;4;;;;vpos;;v;;r;;d24,2;;b0,0;;m">
+</treenode>
+<treenode node="getEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php;f7;6;1;9;;;;vpos;;v;;r;;d26,6;;b1,0;;m">
 </treenode>
 </treenode>
 <treenode node="M_login;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\models\m_login.php;f0;1;1;7;;;;vpos;;vCI_Model;;c;;r;;d30,1;;b0,0;;m">

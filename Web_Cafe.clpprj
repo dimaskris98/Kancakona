@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="E:\School Project\htdocs\Kancakona\Web_Cafe.clpprj">
 	<settings><PM_URL><![CDATA[http://localhost/Web_Kafe/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/Web_Kafe/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";E:\School Project\htdocs\Kancakona\application\views\admin\Codelobster0.php;"/><added value=""/><lastopfiles>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\navigation.php"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\form-validation.html"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\bootstrap.min.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\bootstrap-responsive.min.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\colorpicker.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\datepicker.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\uniform.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\select2.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\matrix-style.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\matrix-media.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\css\bootstrap-wysihtml5.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\matrix\font-awesome\css\font-awesome.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\TEMP\Codelobster1.php"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\content.php"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Admin.php"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\mystyle.css"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\head.php"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\School Project\htdocs\Kancakona\TEMP\matrix\font-awesome\css\font-awesome.css">
@@ -642,6 +629,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\font-awesome\css\font-awesome.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\uniform.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\select2.css" crc="1541934485"/>
+		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\mystyle.css" crc="1542116458"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-style.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-media.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-login.css" crc="1541934485"/>
@@ -667,11 +655,13 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\cli\error_db.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\cli\error_404.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\index.html" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php" crc="1542089534"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php" crc="1542093359"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\saran.php" crc="1542093039"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php" crc="1542121961"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\menu.php" crc="1542093039"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php" crc="1542115077"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\beranda.php" crc="1541949771"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\navigation.php" crc="1542093039"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\head.php" crc="1542092744"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\head.php" crc="1542109958"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\footer.php" crc="1542088007"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\content.php" crc="1541949774"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\welcome_message.php" crc="1429869652"/>
@@ -679,7 +669,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\profil.php" crc="1541947417"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\third_party\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_login.php" crc="1541946604"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php" crc="1542039294"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php" crc="1542110778"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\logs\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\libraries\index.html" crc="1429869652"/>
@@ -691,8 +681,8 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Welcome.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Awal.php" crc="1541952531"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php" crc="1542042580"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Admin.php" crc="1542093039"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php" crc="1542118305"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Admin.php" crc="1542111581"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\user_agents.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\smileys.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\routes.php" crc="1541923660"/>

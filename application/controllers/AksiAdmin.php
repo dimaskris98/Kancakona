@@ -15,22 +15,30 @@ class AksiAdmin extends CI_Controller {
 		$config['max_height'] = 768;
 		
 		$this->load->library('upload',$config);
-		
+		$cek = $_FILES['gambar']['name']; 
 		$judul = $this->input->post('judul');
-		if(!$this->upload->do_upload('gambar'))
-		{
-			$error =$this->upload->display_errors();
-			var_dump($error);
-			echo "
-					<script>
-						alert('$error');
-					</script> ";	
-		}else{
-			echo "
+		if($cek){
+			if($this->upload->do_upload('gambar')){
+				echo "
 					<script>
 						alert('Berhasil');
 					</script>
-			 ";
+			 		".var_dump($cek);
+			}else{
+				$error =$this->upload->display_errors('','');
+				echo "
+					<script>
+						window.history.back();
+						alert('$error');
+					</script> ";	
+			}
+			
+		}else{
+			echo "
+					<script>
+						alert('FOTO KOSONG');
+					</script>
+			 		".var_dump($cek);
 		}
 	}
 }

@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
 	function __construct() {
 		parent::__construct();
+			$this->load->model('M_aksiadmin');
 			$this->load->view('admin/head');
 			$this->load->view('admin/navigation');
 			$this->load->view('admin/content');
@@ -24,12 +25,12 @@ class Admin extends CI_Controller {
 				//</script>';
 		//	header("Location: ".base_url());
 	//	}
-		
-		
 	}
 	
 	public function event(){
-			$this->load->view('admin/konten/event');
+			
+			$data = $this->db->get('event')->result();
+			$this->load->view('admin/konten/event',$var = array('data' =>$data));
 			$this->load->view('admin/footer');
 	}
 	

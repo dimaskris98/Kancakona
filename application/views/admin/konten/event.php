@@ -10,93 +10,30 @@
           </div>
           <div class="widget-content nopadding">
         	
-            <table class="table table-bordered data-table with-check">
+            <table class="table table-bordered data-table with-check event">
               <thead>
                 <tr>
-                  <th><i class="icon-resize-vertical"></th>
-                  <th>Tanggal</th>
-                  <th>Judul</th>
-                  <th>Isi</th>
-                  <th class="opsi" style="width: 100px">Opsi</th>
+                  <th class="satu"><i class="icon-resize-vertical"></th>
+                  <th class="dua">Tanggal</th>
+                  <th class="tiga">Judul</th>
+                  <th class="empat">Isi</th>
+                  <th class="lima">Opsi</th>
                 </tr>
               </thead>
               <tbody>
+              <?php foreach($data as $row){?>
                 <tr class="gradeX">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="opsi">
+                  <td class="satu"><input type="checkbox" /></td>
+                  <td class="dua"><?php echo $row->tanggal;?></td>
+                  <td class="tiga"><p><?php echo $row->judul; ?></p></td>
+                  <td class="empat"><p><?php echo $row->isi; ?></p></td>
+                  <td class="lima">
                   	<button class="btn btn-mini btn-info">Edit</button>
                   	<button class="btn btn-mini btn-danger">Hapus</button></button>
                   </td>
                 </tr>
-                <tr class="gradeC">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr class="gradeA">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5</td>
-                  <td>Win 95+</td>
-                  <td class="center">5.5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center"> 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center"> 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5</td>
-                  <td>Win 95+</td>
-                  <td class="center">5.5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 6</td>
-                  <td>Win 98+</td>
-                  <td class="center">6</td>
-                </tr>
-                
+                <?php } ?>
+                                
               </tbody>
             </table>
           </div>

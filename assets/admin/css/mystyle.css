@@ -1,3 +1,48 @@
-.table .opsi {
+.table.event {
+	table-layout: fixed;
+}
+.table .satu{
+	width: 12px;
 	text-align: center;
+	vertical-align: middle;
+}
+.table .dua{
+	width: 10%;
+	vertical-align: middle;
+}
+.table .tiga{
+	vertical-align: middle;
+	width: 20%;
+}
+.table .tiga p{
+	vertical-align: middle;
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.table .empat{
+	width: 70%
+}
+.table .empat p{
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+	
+}
+.table .lima{
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+input.kanan{
+	float: right;
+}
+button.kanan{
+	float: right;
+}
+div.controls{
+	vertical-align: middle;
 }
