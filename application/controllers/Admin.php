@@ -26,25 +26,26 @@ class Admin extends CI_Controller {
 		//	header("Location: ".base_url());
 	//	}
 		$this->load->view('admin/footer');
-		}
-		else{
-			echo '<script type="text/javascript">
-					alert("hai");
-					</script>';
-			header("Location: ".base_url());	}
 		
 		
 	}
 	
 	public function event(){
-			
-			$data = $this->db->get('event')->result();
+			$data = $this->M_aksiadmin->getEvent();
 			$this->load->view('admin/konten/event',$var = array('data' =>$data));
 			$this->load->view('admin/footer');
 	}
 	
 	public function newEvent(){
 			$this->load->view('admin/konten/newEvent');
+			$this->load->view('admin/footer');
+	}
+	public function editEvent(){
+			
+			$id = $this->uri->segment(3);
+			$data = $this->M_aksiadmin->selectEvent($ambil = array('no_post'=>$id));
+			
+			$this->load->view('admin/konten/newEvent',$var = array('data'=>$data));
 			$this->load->view('admin/footer');
 	}
 	public function menu(){
