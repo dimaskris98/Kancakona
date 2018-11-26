@@ -27,38 +27,21 @@
       		    </div>
       	      </div>
       	    </div>
-<<<<<<< HEAD
       	    <div class="span10">
       	    	<input type="hidden" value="<?php echo $this->uri->segment(3); ?>" name="no_post" />
       	    	<input type="text" class="form-control" id="jdl" name="judul" value="<?php if(isset($data->judul)){echo $data->judul;}?>"/>
       	    </div>
       	<div class="span2 control-group" style="margin-left: 0px">
-=======
-      	    <div class="span10 no-margin">
-      	    	<input type="text" class="form-control" id="jdl" name="judul" value="<?php if(isset($data->judul)){echo $data->judul;}?>"/>
-      	    </div>
-      	<div class="row-fluid">
-      		<div class="span2">
-      	<div class="control-group">
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
       		<div class="controls">
       		<label for="img">Gambar : </label>
       		</div>
       	</div>
-<<<<<<< HEAD
       	<div class="span10 control-group">
       			<div class="controls">
       				<input type='file' id="imgInp" name="img" />
       			</div>
       			
       		</div>
-=======
-      	</div>
-      	<div class="span10">
-      		<input type='file' id="imgInp" name="img" />
-      	</div>
-      	</div>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
       	
       	</div>
       		
@@ -76,11 +59,7 @@
       <h5>Isi Berita</h5>
         <div class="control-group">       
             <div class="controls">
-<<<<<<< HEAD
               <textarea id="des" class="textarea_editor span12" rows="10" placeholder="Masukkan text....." name="isi" ><?php if(isset($data)){echo $data->isi;}?></textarea>
-=======
-              <textarea class="textarea_editor span12" rows="6" placeholder="Masukkan text" name="isi" ><?php if(isset($data)){echo $data->isi;}?></textarea>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
             </div>
             <div class="row-fluid">
             	<a href="<?php echo base_url('Admin/event'); ?>" class="btn btn-danger">KEMBALI</a>

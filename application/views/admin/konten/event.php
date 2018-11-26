@@ -33,11 +33,7 @@
                   <td class="empat"><p><?php echo htmlentities($row->isi); ?></p></td>
                   <td class="lima">
                   	<a  href="<?php echo base_url()."Admin/editEvent/".$row->no_post ?>" class="btn btn-mini btn-info">Edit</a>
-<<<<<<< HEAD
                   	<a  href="<?php echo base_url()."Admin/delEvent/".$row->no_post ?>" class="btn btn-mini btn-danger">Hapus</a>
-=======
-                  	<a  href="" class="btn btn-mini btn-danger">Hapus</button></button>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
                   </td>
                 </tr>
                 <?php } ?>
