@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Colorlib Template - EatWell</title>
+    <title>Website KANCAKONA KOPI</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery.timepicker.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/icomoon.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/flipcard.css')?>">
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     
@@ -31,9 +32,9 @@
             <li class="nav-item active"><a href="#section-home" class="nav-link">Beranda</a></li>
             <li class="nav-item"><a href="#section-about" class="nav-link">Tentang Kami</a></li>
             <li class="nav-item"><a href="#section-offer" class="nav-link">Sejarah</a></li>
-            <li class="nav-item"><a href="#section-menu" class="nav-link">Produk</a></li>
+            <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
             <li class="nav-item"><a href="#section-news" class="nav-link">News</a></li>
-            <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#section-gallery" class="nav-link">Galeri</a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link">Saran</a></li>
             <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
           </ul>
@@ -46,9 +47,9 @@
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
-            <h1 class="site-heading site-animate mb-3">KANCAKONA CAFE</h1>
-            <h2 class="h5 site-subheading mb-5 site-animate">Come and eat well with our delicious &amp; healthy foods.</h2>    
-            <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Reservation</a></p>
+            <h1 class="site-heading site-animate mb-3">KANCAKONA KOPI</h1>
+            <h2 class="h5 site-subheading mb-5 site-animate">Hubbul Qahwa Minal Iman</h2>    
+            <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
           </div>
         </div>
       </div>
@@ -59,8 +60,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 site-animate mb-5">
-            <h4 class="site-sub-title">Our Story</h4>
-            <h2 class="site-primary-title display-4">Welcome</h2>
+            <h4 class="site-sub-title">Sekilas Tentang Kami</h4>
+            <h2 class="site-primary-title display-4">Kancakona Kopi</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
             <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -221,7 +222,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Delicious Menu</h2>
+            <h2 class="display-4">Menu Favorit</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -457,15 +458,17 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="media d-block mb-4 text-center site-media site-animate">
-              <img src="<?php echo base_url('assets/images/offer_1.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
-              <div class="media-body p-md-5 p-4">
-                <h5 class="mt-0 h4">We Have Dilecious Food</h5>
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-              </div>
-            </div>
+		  <div class="media d-block mb-4 text-center site-media site-animate">
+          	<div class="card">
+		<div class="front"><img src="<?php echo base_url('assets/images/cappucino.png')?>">
+	</div>
+	<div class="back">
+		<div class="details">
+		<h2>Cappucino<br><span> Rp 15.000</span><h2>
+		</div>
+	</div>
+	</div>
+	</div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="media d-block mb-4 text-center site-media site-animate">
@@ -549,10 +552,10 @@
         <div class="row">
 
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Get In Touch</h2>
+            <h2 class="display-4">Saran</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="lead">Berikan kami saran untuk kemajuan kami</p>
               </div>
             </div>
           </div>
@@ -677,17 +680,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
               </div>
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
+                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
                 </button>
-                <h1 class="mb-4">Reserve A Table</h1>  
+                <h1 class="mb-4">Pesan Tempat</h1>  
                 <form action="#" method="post">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_fname">First Name</label>
+                      <label for="m_fname">Nama Depan</label>
                       <input type="text" class="form-control" id="m_fname">
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_lname">Last Name</label>
+                      <label for="m_lname">Nama Belakang</label>
                       <input type="text" class="form-control" id="m_lname">
                     </div>
                   </div>
@@ -699,41 +702,41 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_people">How Many People</label>
+                      <label for="m_people">Jumlah Orang</label>
                       <select name="" id="m_people" class="form-control">
-                        <option value="1">1 People</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4+">4+ People</option>
+                        <option value="1">1 Orang</option>
+                        <option value="2">2 Orang</option>
+                        <option value="3">3 Orang</option>
+                        <option value="4+">4+ Orang</option>
                       </select>
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_phone">Phone</label>
+                      <label for="m_phone">Nomor Hp</label>
                       <input type="text" class="form-control" id="m_phone">
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_date">Date</label>
+                      <label for="m_date">Tanggal</label>
                       <input type="text" class="form-control" id="m_date">
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_time">Time</label>
+                      <label for="m_time">Waktu</label>
                       <input type="text" class="form-control" id="m_time">
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <label for="m_message">Message</label>
+                      <label for="m_message">Keterangan Tambahan</label>
                       <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>
                     </div>
                   </div>
                   
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Reserve Now">
+                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Pesan Sekarang">
                     </div>
                   </div>
 
@@ -753,9 +756,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="row">
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
+                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
                 </button>
-                <h1 class="mb-4">Login As Admin</h1>  
+                <h1 class="mb-4">Login Sebagai Admin</h1>  
                 <form action="Awal/auth" method="post">
                   <div class="row">
                     <div class="col-md-12 form-group">

@@ -3,7 +3,11 @@ class M_aksiadmin extends CI_Model {
 	function __construct() {
 		
 	}
+<<<<<<< HEAD
 	//DATA MODEL EVENT
+=======
+
+>>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 	public function getEvent(){
 		$data = $this->db->get('event');
 		return($data->result());
@@ -16,6 +20,7 @@ class M_aksiadmin extends CI_Model {
 		$cek = $this->db->insert('event',$data);	
 		return($cek);
 	}
+<<<<<<< HEAD
 	public function delEvent($where){
 		$cek = $this->db->delete('event',$where);
 		return($cek);
@@ -49,5 +54,7 @@ class M_aksiadmin extends CI_Model {
 		$data = $this->db->get('saran');
 		return($data->result());
 	}
+=======
+>>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 }
 ?>

@@ -634,11 +634,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\font-awesome\css\font-awesome.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\uniform.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\select2.css" crc="1541934485"/>
-<<<<<<< HEAD
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\mystyle.css" crc="1543036702"/>
-=======
-		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\mystyle.css" crc="1542215016"/>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-style.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-media.css" crc="1541934485"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\admin\css\matrix-login.css" crc="1541934485"/>
@@ -664,18 +660,11 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\cli\error_db.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\cli\error_404.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\errors\index.html" crc="1429869652"/>
-<<<<<<< HEAD
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\saran.php" crc="1543036616"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newMenu.php" crc="1543042747"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php" crc="1543040048"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\menu.php" crc="1543038477"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php" crc="1542620165"/>
-=======
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\saran.php" crc="1542093039"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php" crc="1542222737"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\menu.php" crc="1542093039"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php" crc="1542220182"/>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\beranda.php" crc="1541949771"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\navigation.php" crc="1542620897"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\head.php" crc="1542109958"/>
@@ -686,11 +675,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\profil.php" crc="1541947417"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\third_party\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_login.php" crc="1541946604"/>
-<<<<<<< HEAD
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php" crc="1543041952"/>
-=======
-		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php" crc="1542223083"/>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 		<file name="E:\School Project\htdocs\Kancakona\application\models\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\logs\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\libraries\index.html" crc="1429869652"/>
@@ -702,15 +687,10 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Welcome.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Awal.php" crc="1541952531"/>
-<<<<<<< HEAD
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminSaran.php" crc="1543034262"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminMenu.php" crc="1543037673"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminEvent.php" crc="1543042593"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Admin.php" crc="1543041983"/>
-=======
-		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php" crc="1542218795"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Admin.php" crc="1542223118"/>
->>>>>>> ed2f63066849eb59d1855e55c68297c9fdff4684
 		<file name="E:\School Project\htdocs\Kancakona\application\config\user_agents.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\smileys.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\routes.php" crc="1541923660"/>
