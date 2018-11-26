@@ -16,11 +16,11 @@
             <table class="table table-bordered data-table with-check event">
               <thead>
                 <tr>
-                  <th class="satu"><i class="icon-resize-vertical"></th>
-                  <th class="dua">Nama</th>
-                  <th class="tiga">Harga</th>
-                  <th class="empat">Deskripsi</th>
-                  <th class="dua">Foto</th>
+                  <th class=""><i class="icon-resize-vertical"></th>
+                  <th class="m-dua">Nama</th>
+                  <th class="m-tiga">Harga</th>
+                  <th class="m-empat">Deskripsi</th>
+                  <th class="m-dua">Foto</th>
                   <th class="lima">Opsi</th>
                 </tr>
               </thead>
@@ -28,7 +28,7 @@
               	
               <?php foreach($data as $row){?>
                 <tr class="gradeX">
-                  <td class="satu"><input type="checkbox" name="no_menu[]" value="<?php echo $row->no_menu ?>" /></td>
+                  <td class=""><input type="checkbox" name="no_menu[]" value="<?php echo $row->no_menu ?>" /></td>
                   <td class="dua"><?php echo $row->nama;?></td>
                   <td class="tiga"><p><?php echo $row->harga; ?></p></td>
                   <td class="empat"><p><?php echo $row->deskripsi; ?></p></td>
