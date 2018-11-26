@@ -33,7 +33,7 @@
             <li class="nav-item"><a href="#section-about" class="nav-link">Tentang Kami</a></li>
             <li class="nav-item"><a href="#section-offer" class="nav-link">Sejarah</a></li>
             <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#section-news" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#section-news" class="nav-link">Berita</a></li>
             <li class="nav-item"><a href="#section-gallery" class="nav-link">Galeri</a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link">Saran</a></li>
             <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
@@ -48,8 +48,8 @@
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
             <h1 class="site-heading site-animate mb-3">KANCAKONA KOPI</h1>
-            <h2 class="h5 site-subheading mb-5 site-animate">Hubbul Qahwa Minal Iman</h2>    
-            <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
+            <h2 class="h5 site-subheading mb-5 site-animate">Kopi yang baik akan selalu menemukan penikmatnya - Ben "Filosopi Kopi"</h2>    
+            <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang!</a></p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
             <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p><a href="#" class="btn btn-secondary btn-lg">Learn More About Us</a></p>
+            <p><a href="#" class="btn btn-secondary btn-lg">Pelajari Lebih Lanjut</a></p>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 site-animate img" data-animate-effect="fadeInRight">
@@ -82,8 +82,8 @@
         
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h4 class="site-sub-title">Our Offers</h4>
-            <h2 class="display-4">Our Offer This Summer</h2>
+            <h4 class="site-sub-title">Penawaran Kami</h4>
+            <h2 class="display-4">Penawaran Kami Terkini</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -101,7 +101,7 @@
                     <h5 class="mt-0 h4">Beef with Sausage</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@
                     <h5 class="mt-0 h4">Egg with Garlic </h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
                     <h5 class="mt-0 h4">Beef Ribs</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@
                     <h5 class="mt-0 h4">Beef with Sauce</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@
                     <h5 class="mt-0 h4">Fresh Salmon Fish</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@
                     <h5 class="mt-0 h4">Beef Ribs</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@
                     <h5 class="mt-0 h4">Beef with Sauce</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@
                     <h5 class="mt-0 h4">Fresh Salmon Fish</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -205,7 +205,7 @@
                     <h5 class="mt-0 h4">Beef Ribs</h5>
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Pesan Sekarang!</a></p>
                   </div>
                 </div>
               </div>
@@ -234,13 +234,13 @@
 
             <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab" role="tablist">
               <li class="nav-item site-animate">
-                <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</a>
+                <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast" role="tab" aria-controls="pills-breakfast" aria-selected="true">Pagi</a>
               </li>
               <li class="nav-item site-animate">
-                <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab" aria-controls="pills-lunch" aria-selected="false">Lunch</a>
+                <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab" aria-controls="pills-lunch" aria-selected="false">Siang</a>
               </li>
               <li class="nav-item site-animate">
-                <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-dinner" role="tab" aria-controls="pills-dinner" aria-selected="false">Dinner</a>
+                <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-dinner" role="tab" aria-controls="pills-dinner" aria-selected="false">Malam</a>
               </li>
             </ul>
 
@@ -449,7 +449,7 @@
 
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">News</h2>
+            <h2 class="display-4">Berita</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -502,7 +502,7 @@
         <div class="row site-custom-gutters">
 
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Gallery</h2>
+            <h2 class="display-4">Galeri</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -555,7 +555,7 @@
             <h2 class="display-4">Saran</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Berikan kami saran untuk kemajuan kami</p>
+                <p class="lead">Berikan saran Anda untuk kemajuan pelayanan Kami</p>
               </div>
             </div>
           </div>
@@ -564,9 +564,9 @@
           <div class="col-md-4 site-animate">
             <p><img src="<?php echo base_url('assets/images/about_img_1.jpg')?>" alt="" class="img-fluid"></p>
             <p class="text-black">
-              Address: <br> 121 Street, Melbourne Victoria <br> 3000 Australia <br> <br>
-              Phone: <br> 90 987 65 44 <br> <br>
-              Email: <br> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+              Alamat: <br> Jl. Basuki Rahmat No.230, Muktisari, Tegal Besar, Kaliwates <br> Kabupaten Jember, Jawa Timur 68131 <br> <br>
+              Telepon: <br> 0813-3664-1191 <br> <br>
+              Email: <br> <a href="mailto:info@kancakona.com">info@kancakona.com</a>
             </p>
           </div>
           <div class="col-md-1"></div>
@@ -574,7 +574,7 @@
             <form action="" method="post">
               <div class="form-group">
                 <label for="name" class="sr-only">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Nama">
               </div>
               <div class="form-group">
                 <label for="email" class="sr-only">Email</label>
@@ -582,10 +582,10 @@
               </div>
               <div class="form-group">
                 <label for="message" class="sr-only">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write your message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Tulis saran Anda"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg" value="Send Message">
+                <input type="submit" class="btn btn-primary btn-lg" value="Kirim Saran">
               </div>
             </form>
           </div>
@@ -604,18 +604,18 @@
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-4 site-animate">
-                <h2 class="site-heading-2">About Us</h2>
+                <h2 class="site-heading-2">Tentang Kami</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, similique, delectus blanditiis odit expedita amet. Sed labore ipsum vel dolore, quis, culpa et magni autem sequi facere eos tenetur, ex?</p>
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-3 site-animate">
                 <div class="site-footer-widget mb-4">
-                  <h2 class="site-heading-2">The Restaurant</h2>
+                  <h2 class="site-heading-2">Kancakona Kopi</h2>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="py-2 d-block">About Us</a></li>
+                    <li><a href="#" class="py-2 d-block">Tentang Kami</a></li>
                     <li><a href="#" class="py-2 d-block">Chefs</a></li>
-                    <li><a href="#" class="py-2 d-block">Events</a></li>
-                    <li><a href="#" class="py-2 d-block">Contact</a></li>
+                    <li><a href="#" class="py-2 d-block">Berita</a></li>
+                    <li><a href="#" class="py-2 d-block">Kontak</a></li>
                   </ul>
                 </div>
               </div>
@@ -659,7 +659,7 @@
           </div>
           <div class="col-md-12 text-center">
             <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -680,7 +680,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
               </div>
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
+                  <small>Tutup </small><span aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="mb-4">Pesan Tempat</h1>  
                 <form action="#" method="post">
@@ -736,7 +736,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                   
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Pesan Sekarang">
+                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Pesan Sekarang!">
                     </div>
                   </div>
 
@@ -756,9 +756,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="row">
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
+                  <small>Tutup </small><span aria-hidden="true">&times;</span>
                 </button>
-                <h1 class="mb-4">Login Sebagai Admin</h1>  
+                <h1 class="mb-4">Login sebagai Admin</h1>  
                 <form action="Awal/auth" method="post">
                   <div class="row">
                     <div class="col-md-12 form-group">
