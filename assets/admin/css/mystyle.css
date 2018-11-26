@@ -21,6 +21,16 @@
 	overflow: hidden;
 	margin-bottom: 0px;
 }
+#bdr-ft{
+	display: table-cell;
+	height: 90px;
+	text-align: center;
+	vertical-align: middle;
+}
+#blah{
+	margin: auto;
+	max-height: 90px;
+}
 .table .empat{
 	width: 70%
 }

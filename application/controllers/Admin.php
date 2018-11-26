@@ -13,32 +13,21 @@ class Admin extends CI_Controller {
 	}
 	
 	public function index(){
-		//$cek = $this->session->userdata('admin');
+		if ($this->session->userdata('admin') == TRUE){
 		//if(isset($cek)){
 			$this->load->view('admin/konten/beranda');
-			$this->load->view('admin/footer');
-		//}else{
-			//echo '
-		//		<script>
-				//	alert("Silahkan Login kembali")
-			//		history.
-				//</script>';
-		//	header("Location: ".base_url());
-	//	}
 		$this->load->view('admin/footer');
 		}
 		else{
 			echo '<script type="text/javascript">
 					alert("hai");
 					</script>';
-			header("Location: ".base_url());	}
-		
-		
-	}
+			header("Location: ".base_url());
+		}
+		}
 	
 	public function event(){
-			
-			$data = $this->db->get('event')->result();
+			$data = $this->M_aksiadmin->getEvent();
 			$this->load->view('admin/konten/event',$var = array('data' =>$data));
 			$this->load->view('admin/footer');
 	}
@@ -47,8 +36,20 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/konten/newEvent');
 			$this->load->view('admin/footer');
 	}
+	public function editEvent(){
+			
+			$id = $this->uri->segment(3);
+			$data = $this->M_aksiadmin->selectEvent($ambil = array('no_post'=>$id));
+			
+			$this->load->view('admin/konten/newEvent',$var = array('data'=>$data));
+			$this->load->view('admin/footer');
+	}
 	public function menu(){
 			$this->load->view('admin/konten/menu');
+			$this->load->view('admin/footer');
+	}
+	public function form_menu(){
+			$this->load->view('admin/konten/Form_Menu');
 			$this->load->view('admin/footer');
 	}
 	public function saran(){
