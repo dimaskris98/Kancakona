@@ -2,98 +2,47 @@
       <div class="span12">
 
         <div class="widget-box">
+        	<form action="<?php echo base_url('AksiAdminEvent/delmulEvent')?>" method="post">
           <div class="widget-title"> <span class="icon">
             <input type="checkbox" id="title-checkbox" name="title-checkbox" />
             </span>
             <h5>Saran</h5>
+            <input type="submit" class=" btn btn-mini btn-danger buttons" value="Hapus" />
+            
           </div>
           <div class="widget-content nopadding">
-            <table class="table table-bordered data-table with-check">
+        	
+            <table class="table table-bordered data-table with-check event">
               <thead>
                 <tr>
                   <th><i class="icon-resize-vertical"></th>
-                  <th>Nama</th>
-                  <th>Email</th>
-                  <th>Nomor Handphone</th>
-                  <th>Saran</th>
+                  <th class="s-dua">Tanggal</th>
+                  <th class="s-tiga">Nama</th>
+                  <th class="s-tiga">Email</th>
+                  <th class="s-nomer">Nomor Handphone</th>
+                  <th class="s-empat">Saran</th>
+                  <th class="s-lima">Opsi</th>
                 </tr>
               </thead>
               <tbody>
+              	
+              <?php foreach($data as $row){?>
                 <tr class="gradeX">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">4</td>
+                  <td><input type="checkbox" name="no_saran[]" value="<?php echo $row->no_saran ?>" /></td>
+                  <td class="s-dua"><?php echo $row->tanggal;?></td>
+                  <td class="s-tiga"><p><?php echo $row->nama; ?></p></td>
+                  <td class="s-tiga"><p><?php echo $row->email; ?></p></td>
+                  <td class="s-nomer"><p><?php echo $row->nomer; ?></p></td>
+                  <td class="s-empat"><p><?php echo $row->saran; ?></p></td>
+                  <td class="s-lima">
+                  	<a  href="<?php echo base_url()."Admin/delSaran/".$row->no_saran ?>" class="btn btn-mini btn-danger">Hapus</a>
+                  </td>
                 </tr>
-                <tr class="gradeC">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr class="gradeA">
-                <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5</td>
-                  <td>Win 95+</td>
-                  <td class="center">5.5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center"> 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td class="center"> 4</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0</td>
-                  <td>Win 95+</td>
-                  <td class="center">5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5</td>
-                  <td>Win 95+</td>
-                  <td class="center">5.5</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 6</td>
-                  <td>Win 98+</td>
-                  <td class="center">6</td>
-                </tr>
-                
+                <?php } ?>
+                         
               </tbody>
             </table>
+            </form> 
           </div>
         </div>
       </div>
@@ -101,6 +50,7 @@
     </div>
     </div>
     </div>
+    
 <script src="<?php echo base_url('assets/admin/js/jquery.min.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/jquery.ui.custom.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/bootstrap.min.js')?>"></script> 

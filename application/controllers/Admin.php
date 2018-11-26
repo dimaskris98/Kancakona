@@ -25,37 +25,64 @@ class Admin extends CI_Controller {
 				//</script>';
 		//	header("Location: ".base_url());
 	//	}
-		$this->load->view('admin/footer');
+		//$this->load->view('admin/footer');
 		
 		
 	}
 	
+	//EVENT CONTROLLER
 	public function event(){
-			$data = $this->M_aksiadmin->getEvent();
-			$this->load->view('admin/konten/event',$var = array('data' =>$data));
-			$this->load->view('admin/footer');
+		$data = $this->M_aksiadmin->getEvent();
+		$this->load->view('admin/konten/event',$var = array('data' =>$data));
+		$this->load->view('admin/footer');
 	}
 	
 	public function newEvent(){
-			$this->load->view('admin/konten/newEvent');
-			$this->load->view('admin/footer');
+		$this->load->view('admin/konten/newEvent');
+		$this->load->view('admin/footer');
 	}
+	
 	public function editEvent(){
 			
-			$id = $this->uri->segment(3);
-			$data = $this->M_aksiadmin->selectEvent($ambil = array('no_post'=>$id));
+		$id = $this->uri->segment(3);
+		$data = $this->M_aksiadmin->selectEvent($ambil = array('no_post'=>$id));
 			
-			$this->load->view('admin/konten/newEvent',$var = array('data'=>$data));
-			$this->load->view('admin/footer');
+		$this->load->view('admin/konten/newEvent',$var = array('data'=>$data));
+		$this->load->view('admin/footer');
 	}
+	
+	
+	//MENU CONTROLLER
 	public function menu(){
-			$this->load->view('admin/konten/menu');
-			$this->load->view('admin/footer');
+		$data = $this->M_aksiadmin->getMenu();
+		$this->load->view('admin/konten/menu', array('data'=>$data));
+		$this->load->view('admin/footer');
 	}
+	
+		public function newMenu(){
+		$this->load->view('admin/konten/newMenu');
+		$this->load->view('admin/footer');
+	}
+	
+	public function editMenu(){
+			
+		$id = $this->uri->segment(3);
+		$data = $this->M_aksiadmin->selectMenu($ambil = array('no_menu'=>$id));
+			
+		$this->load->view('admin/konten/newMenu',$var = array('data'=>$data));
+		$this->load->view('admin/footer');
+	}
+	
+	
+	
+	
+	
 	public function saran(){
-			$this->load->view('admin/konten/saran');
-			$this->load->view('admin/footer');
+		$data = $this->M_aksiadmin->getSaran();
+		$this->load->view('admin/konten/saran', array('data'=>$data));
+		$this->load->view('admin/footer');
 	}
+	
 	public function logout(){
 		header("Location: ".base_url());
 		$this->session->sess_destroy();
