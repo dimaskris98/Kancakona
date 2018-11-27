@@ -7,7 +7,7 @@ body {
   background: #fff;
   font-size: 16px;
   line-height: 1.6;
-  color: #b8b8b8;
+  color: #828080;
 }
 
 a {
@@ -516,6 +516,7 @@ textarea.form-control {
   position: relative;
   right: 0;
 }
+
 
 @media screen and (max-width: 768px) {
   #section-about .img {
