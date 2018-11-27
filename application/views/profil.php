@@ -511,33 +511,33 @@
           </div>
 
           <div class="col-md-4 site-animate">
-            <a href="images/gambar 1.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 1.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 1.jpg')?>" alt="gambar 1" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_2.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 2.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 2.jpg')?>" alt="gambar 2" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_3.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 3.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 3.jpg')?>" alt="gambar 3" class="img-fluid">
             </a>
           </div>
 
           <div class="col-md-4 site-animate">
-            <a href="images/menu_2.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 4.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 4.jpg')?>" alt="gambar 4" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_3.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 5.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 5.jpg')?>" alt="gambar 5" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_1.jpg" class="site-thumbnail image-popup">
+            <a href="<?php echo base_url('assets/images/gambar 6.jpg')?>" class="site-thumbnail image-popup">
               <img src="<?php echo base_url('assets/images/gambar 6.jpg')?>" alt="gambar 6" class="img-fluid">
             </a>
           </div>
