@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Website KANCAKONA KOPI</title>
@@ -30,10 +30,10 @@
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="#section-home" class="nav-link">Beranda</a></li>
-            <li class="nav-item"><a href="#section-about" class="nav-link">Tentang Kami</a></li>
-            <li class="nav-item"><a href="#section-offer" class="nav-link">Sejarah</a></li>
+            <li class="nav-item"><a href="#section-about" class="nav-link">Sejarah</a></li>
+            <li class="nav-item"><a href="#section-offer" class="nav-link">Event</a></li>
             <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#section-news" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#section-news" class="nav-link">Menu</a></li>
             <li class="nav-item"><a href="#section-gallery" class="nav-link">Galeri</a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link">Saran</a></li>
             <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
@@ -43,12 +43,12 @@
     </nav>
     <!-- END nav -->
 
-    <section class="site-cover" style="background-image: url(<?php echo base_url('assets/images/bg_3.jpg')?>);" id="section-home">
+    <section class="site-cover" style="background-image: url(<?php echo base_url('assets/images/w.png')?>);" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
             <h1 class="site-heading site-animate mb-3">KANCAKONA KOPI</h1>
-            <h2 class="h5 site-subheading mb-5 site-animate">Hubbul Qahwa Minal Iman</h2>    
+            <p style="color:#f6f6f6"><font size="8" ><b>حب القهو من الإيمان</b></font></br>Hubbul Qahwa Minal Iman</p>    
             <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
           </div>
         </div>
@@ -60,16 +60,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 site-animate mb-5">
-            <h4 class="site-sub-title">Sekilas Tentang Kami</h4>
+            <h4 style="color:#828080" class="site-sub-title">Sekilas Tentang Kami</h4>
             <h2 class="site-primary-title display-4">Kancakona Kopi</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p><a href="#" class="btn btn-secondary btn-lg">Learn More About Us</a></p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <!--<p><a href="#" class="btn btn-secondary btn-lg">Learn More About Us</a></p>-->
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 site-animate img" data-animate-effect="fadeInRight">
-            <img src="<?php echo base_url('assets/images/about_img_1.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <img src="<?php echo base_url('assets/images/aa.jpg')?>" alt="kancakona" class="img-fluid">
           </div>
         </div>
       </div>
@@ -398,7 +398,7 @@
         <div class="row site-custom-gutters">
 
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Gallery</h2>
+            <h2 class="display-4">Galeri</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -407,34 +407,34 @@
           </div>
 
           <div class="col-md-4 site-animate">
-            <a href="images/menu_1.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_1.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 1.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 1.jpg')?>" alt="gambar 1" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_2.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_2.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 2.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 2.jpg')?>" alt="gambar 2" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_3.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_3.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 3.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 3.jpg')?>" alt="gambar 3" class="img-fluid">
             </a>
           </div>
 
           <div class="col-md-4 site-animate">
-            <a href="images/menu_2.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_2.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 4.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 4.jpg')?>" alt="gambar 4" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_3.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_3.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 5.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 5.jpg')?>" alt="gambar 5" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4 site-animate">
-            <a href="images/menu_1.jpg" class="site-thumbnail image-popup">
-              <img src="<?php echo base_url('assets/images/menu_1.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
+            <a href="<?php echo base_url('assets/images/gambar 6.jpg')?>" class="site-thumbnail image-popup">
+              <img src="<?php echo base_url('assets/images/gambar 6.jpg')?>" alt="gambar 6" class="img-fluid">
             </a>
           </div>
 
@@ -549,7 +549,7 @@
               <ul class="site-footer-social list-unstyled ">
                 <li class="site-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="site-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="site-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="site-animate"><a href="https://www.instagram.com/kancakonakopijember/"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
