@@ -6,9 +6,9 @@
           <div class="widget-title"> <span class="icon">
             <input type="checkbox" id="title-checkbox" name="title-checkbox" />
             </span>
-            <h5>Data Post Berita</h5>
+            <h5>Daftar Menu</h5>
             <input type="submit" class=" btn btn-mini btn-danger buttons" value="Hapus" />
-            <a href="<?php echo base_url('Admin/newMenu'); ?>" class=" btn btn-mini btn-info buttons">Buat Berita Baru</a>
+            <a href="<?php echo base_url('Admin/newMenu'); ?>" class=" btn btn-mini btn-info buttons">Tambah Menu</a>
             
           </div>
           <div class="widget-content nopadding">
@@ -28,14 +28,18 @@
               	
               <?php foreach($data as $row){?>
                 <tr class="gradeX">
-                  <td class=""><input type="checkbox" name="no_menu[]" value="<?php echo $row->no_menu ?>" /></td>
+                  <td class="m-satu"><input type="checkbox" name="no_menu[]" value="<?php echo $row->no_menu ?>" /></td>
                   <td class="dua"><?php echo $row->nama;?></td>
-                  <td class="tiga"><p><?php echo $row->harga; ?></p></td>
+                  <td class="m-tiga"><p>Rp. <?php echo $row->harga; ?></p></td>
                   <td class="empat"><p><?php echo $row->deskripsi; ?></p></td>
-                  <td class="dua"><p><?php echo $row->gambar; ?></p></td>
+                  <td class="mid dua ">
+                  <?php if(isset($row->nama_gambar)&&$row->nama_gambar!=""){?>
+                  <img  id="tmpGambar" src="<?php echo site_url('assets/images/menu/').'/'.str_replace(' ','_',$row->nama_gambar); ?>" />
+                  <?php } ?>
+                  </td>
                   <td class="lima">
                   	<a  href="<?php echo base_url()."Admin/editMenu/".$row->no_menu ?>" class="btn btn-mini btn-info">Edit</a>
-                  	<a  href="<?php echo base_url()."Admin/delMenu/".$row->no_menu ?>" class="btn btn-mini btn-danger">Hapus</a>
+                  	<a  href="<?php echo base_url()."AksiAdminMenu/delMenu/".$row->no_menu ?>" class="btn btn-mini btn-danger">Hapus</a>
                   </td>
                 </tr>
                 <?php } ?>

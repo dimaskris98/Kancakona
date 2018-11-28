@@ -6,6 +6,7 @@ class Awal extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_login');
+		$this->load->model('m_awal');
 	}
 
 	/**
@@ -25,7 +26,13 @@ class Awal extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('profil');
+		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'),4);
+		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'),4);
+		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'),4);
+		$data = array('kopi'=>$dKopi,
+					  'minuman'=>$dMinu,
+					  'makanan'=>$dMaka);
+		$this->load->view('profil',$data);
 	}
 	
 	public function auth()
@@ -42,8 +49,7 @@ class Awal extends CI_Controller {
 			$this->session->set_userdata('admin',$username);
 			redirect("Admin");
 		}else{
-			echo "goblok";
-			var_dump($cek);
+			redirect("/");
 		}
 		
 	}

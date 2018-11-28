@@ -5,7 +5,7 @@ class AksiAdminEvent extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model('M_aksiadmin');
-
+		$this->load->helper("file");
 	}
 	
 	public function postEvent(){
@@ -80,9 +80,14 @@ class AksiAdminEvent extends CI_Controller {
 	}
 	
 	public function delEvent(){
+		//$this->load->helper('file');
 		$id = $this->uri->segment(3);
+		$a = $this->M_aksiadmin->getImgName('event',array('no_post'=>$id));
 		$data = $this->M_aksiadmin->delEvent($ambil = array('no_post'=>$id));
-		
+		$nama = str_replace(' ','_',$a['nama_gambar']) ;
+		if($nama!=NULL){
+				delete_files('assets/images/event/'.$nama);
+			}
 		if($data){
 			
 			echo "<script>
@@ -98,6 +103,11 @@ class AksiAdminEvent extends CI_Controller {
 		$cek = TRUE;
 		foreach($no_post as $row){
 			$data = $this->M_aksiadmin->delEvent($ambil = array('no_post'=>$row));
+			$a = $this->M_aksiadmin->getImgName('event',array('no_post'=>$row));
+			$nama = str_replace(' ','_',$a['nama_gambar']) ;
+			if($nama!=NULL){
+				delete_files('assets/images/event/'.$nama);
+			}
 			if(!$data){
 				$cek = FALSE;
 			}

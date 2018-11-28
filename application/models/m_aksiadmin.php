@@ -25,9 +25,27 @@ class M_aksiadmin extends CI_Model {
 		return($cek);
 	}
 	
+	public function getImgName($table, $id){
+		$this->db->select('nama_gambar');
+		$this->db->from($table);
+		$this->db->limit(1);
+		$this->db->where($id);
+		$name = $this->db->get()->row_array();
+		
+		return($name);
+	}
+	
+
+	function deleteFiles($path){
+	$jalur = $_SERVER['DOCUMENT_ROOT'].'/Kancakona/assets/images/'.$path;
+    unlink($jalur); // delete file
+        //echo $file.'file deleted';
+	}
+	
 	//DATA MODEL MENU
 	
 	public function getMenu(){
+		$this->db->order_by('no_menu','ASC');
 		$data = $this->db->get('menu');
 		return($data->result());
 	}
@@ -43,11 +61,24 @@ class M_aksiadmin extends CI_Model {
 		$cek = $this->db->delete('menu',$where);
 		return($cek);
 	}
+	public function updateMenu($pk,$data){
+		$cek = $this->db->update('menu',$data, array('no_menu'=>$pk));
+		return($cek);
+	}
 	
 	// DATA SARAN 
 	public function getSaran(){
 		$data = $this->db->get('saran');
 		return($data->result());
+	}
+	
+	public function postSaran($data){
+		$cek = $this->db->insert('saran',$data);	
+		return($cek);
+	}
+	
+	public function delSaran($where){
+		$cek = $this->db->delete('saran',$where);
 	}
 }
 ?>

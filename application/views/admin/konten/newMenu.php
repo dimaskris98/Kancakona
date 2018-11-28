@@ -17,6 +17,7 @@
               <label class="control-label">Nama Menu :</label>
               <div class="controls">
                 <input type="text" class="span11" placeholder="Nama Menu" name="menu"value="<?php  if(isset($data)){echo $data->nama;}?>" />
+                <input type="hidden" class="span11" placeholder="Nama Menu" name="no_menu" value="<?php  if(isset($data)){echo $data->no_menu;}?>" />
               </div>
             </div>
             <div class="control-group">
@@ -47,17 +48,17 @@
                 <input type="file" name="gambar"/>
               </div>
             </div>
-            <?php if(isset($data)&& $data->gambar!=""){
+            <?php if(isset($data)&& $data->nama_gambar!=""){
 				echo '
 				<div class="control-group">
 				<label class="control-label">Gambar :</label>
             		<div class="controls">
-      					<img id="blah" src="'.base_url("assets/images/menu")."/".$data->gambar.'" />
+      					<img id="blah" alt="Gambar Menu" src="'.base_url("assets/images/menu")."/".str_replace(' ','_',$data->nama_gambar).'" />
 			  		</div>
             	</div>';
             } ?>  
             <div class="form-actions">
-              <a href="<?php echo base_url('Admin/event'); ?></a>" class="btn btn-danger">Kembali</a>
+              <a href="<?php echo base_url('Admin/menu'); ?>" class="btn btn-danger">Kembali</a>
               <button type="submit" class="btn btn-success kanan">Simpan</button>
             </div>
           </form>

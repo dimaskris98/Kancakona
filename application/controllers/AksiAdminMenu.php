@@ -32,7 +32,7 @@ class AksiAdminMenu extends CI_Controller {
 							'kategori'=>$kategori,
 							'harga'=>$harga,
 							'deskripsi'=>$des,
-							'gambar'=>$judul.$this->upload->data('file_ext'));
+							'nama_gambar'=>$menu.$this->upload->data('file_ext'));
 				$query = $this->M_aksiadmin->postMenu($data);	
 				if($query){
 					echo " <script>
@@ -64,7 +64,7 @@ class AksiAdminMenu extends CI_Controller {
 							'kategori'=>$kategori,
 							'harga'=>$harga,
 							'deskripsi'=>$des,
-							'gambar'=>'');
+							'nama_gambar'=>'');
 				$query = $this->M_aksiadmin->postMenu($data);	
 				if($query){
 					echo " <script>
@@ -85,6 +85,7 @@ class AksiAdminMenu extends CI_Controller {
 	
 	public function updateMenu(){
 		$menu = $this->input->post('menu');
+		$id = $this->input->post('no_menu');
 		$des = $this->input->post('deskripsi');
 		$kategori = $this->input->post('kategori');
 		$harga = $this->input->post('harga');
@@ -94,7 +95,7 @@ class AksiAdminMenu extends CI_Controller {
 		$config['max_size'] = 2000;
 		$config['max_width'] = 1024;
 		$config['max_height'] = 768;
-		$config['file_name'] = $nama;
+		$config['file_name'] = $menu;
 		
 		$this->load->library('upload',$config);
 		$cek = $_FILES['gambar']['name']; 
@@ -102,13 +103,12 @@ class AksiAdminMenu extends CI_Controller {
 		if($cek){
 			if($this->upload->do_upload('gambar')){
 				$data = array(
-							'no_menu'=>'',
 							'nama'=>$menu,
 							'kategori'=>$kategori,
 							'harga'=>$harga,
 							'deskripsi'=>$des,
-							'gambar'=>$judul.$this->upload->data('file_ext'));
-				$query = $this->M_aksiadmin->postMenu($data);	
+							'nama_gambar'=>$menu.strtolower($this->upload->data('file_ext')));
+				$query = $this->M_aksiadmin->updateMenu($id,$data);	
 				if($query){
 					echo " <script>
 							alert('Menu berhasil disimpan');
@@ -134,13 +134,12 @@ class AksiAdminMenu extends CI_Controller {
 			}
 		}else{
 			$data = array(
-							'no_menu'=>'',
 							'nama'=>$menu,
 							'kategori'=>$kategori,
 							'harga'=>$harga,
-							'deskripsi'=>$des,
-							'gambar'=>'');
-				$query = $this->M_aksiadmin->postMenu($data);	
+							'deskripsi'=>$des
+							);
+				$query = $this->M_aksiadmin->updateMenu($id,$data);	
 				if($query){
 					echo " <script>
 							alert('Menu berhasil disimpan');
@@ -156,6 +155,44 @@ class AksiAdminMenu extends CI_Controller {
 							";
 				};
 		}
+	}
+	
+		public function delMenu(){
+		$id = $this->uri->segment(3);
+		$data = $this->M_aksiadmin->delMenu($ambil = array('no_Menu'=>$id));
+		
+		if($data){
+			
+			echo "<script>
+					alert('Menu Berhasil dihapus');
+					location.href='".base_url('Admin/Menu')."'
+				  </script>";
+		} 
+	}
+	
+	public function delmulMenu(){
+		
+		$no_menu = $this->input->post('no_menu');
+		$cek = TRUE;
+		foreach($no_menu as $row){
+			$data = $this->M_aksiadmin->delMenu($ambil = array('no_menu'=>$row));
+			if(!$data){
+				$cek = FALSE;
+			}
+		}
+		
+		if($cek){
+			echo "<script>
+					alert('Menu Berhasil dihapus');
+					location.href='".base_url('Admin/Menu')."'
+				  </script>";
+		}else{
+			echo "<script>
+					alert('Hapus Data ERROR');
+					location.href='".base_url('Admin/Menu')."'
+				  </script>";
+		}
+		
 	}	
 }
 ?>

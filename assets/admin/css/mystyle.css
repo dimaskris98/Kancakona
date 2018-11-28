@@ -74,13 +74,18 @@
 	margin-bottom: 0px;
 	
 }
+.mid.dua{
+	text-align: center;
+}
 .table .s-lima{
 	width: 50px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-
+.table .m-satu{
+	vertical-align: middle;
+}
 .table .m-dua{
 	width: 20%;
 	vertical-align: middle;
@@ -108,6 +113,10 @@
 	overflow: hidden;
 	margin-bottom: 0px;
 	
+}
+td #tmpGambar{
+	height: auto;
+	max-width: 80%
 }
 
 
