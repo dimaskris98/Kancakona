@@ -34,7 +34,7 @@
             <li class="nav-item"><a href="#section-about" class="nav-link">Sejarah</a></li>
             <li class="nav-item"><a href="#section-offer" class="nav-link">Event</a></li>
             <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#section-news" class="nav-link">Menu</a></li>
+            <!--<li class="nav-item"><a href="#section-news" class="nav-link">Menu</a></li>-->
             <li class="nav-item"><a href="#section-gallery" class="nav-link">Galeri</a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link">Saran</a></li>
             <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
@@ -83,11 +83,9 @@
         
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h4 class="site-sub-title">Event</h4>
             <h2 class="display-4">Event</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
             </div>
           </div>
@@ -104,7 +102,7 @@
                     <h5 class="text-primary"><?php echo $ro->tanggal; ?></h5>
                     <h5 class="mt-0 h4"><?php echo $ro->judul; ?></h5>
                     <p class="mb-4 event-deskripsi"><?php echo htmlentities($ro->isi); ?></p>
-                    <p class="mb-0"><a href="<?php echo site_url('') ?>" class="btn btn-primary btn-sm">Baca Detail</a></p>
+                    <p class="mb-0"><a href="<?php echo site_url('href= target="_blank" class="btn btn-primary btn-sm" btn-lg site-animate" data-toggle="modal" data-target="#eventModal"') ?>" >Baca Detail</a></p>
                   </div>
                 </div>
               </div>
@@ -124,11 +122,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Menu Favorit</h2>
+            <h2 class="display-4">Menu</h2>
             <div class="row justify-content-center">
-              <div class="col-md-7">
+              <!--<div class="col-md-7">
                 <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
+              </div>-->
             </div>
           </div>
 
@@ -155,7 +153,7 @@
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
-                      <img class="mr-3" src="<?php echo base_url('assets/images/menu_1.jpg')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -178,7 +176,7 @@
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
-                      <img class="mr-3" src="<?php echo base_url('assets/images/menu_1.jpg')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -197,7 +195,7 @@
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
-                      <img class="mr-3" src="<?php echo base_url('assets/images/menu_1.jpg')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -216,7 +214,7 @@
     </section>
     <!-- END section -->
 
-    <section class="site-section bg-light" id="section-news">
+    <!--<section class="site-section bg-light" id="section-news">
       <div class="container">
 
         <div class="row">
@@ -279,20 +277,20 @@
           
           
           
-          <!--<div class="col-lg-4 col-md-6 col-sm-6">
+          div class="col-lg-4 col-md-6 col-sm-6">
             <div class="media d-block mb-4 text-center site-media site-animate">
               <img src="<?php echo base_url('assets/images/offer_3.jpg')?>" alt="Free Template by colorlib.com" class="img-fluid">
-              <!--<div class="media-body p-md-5 p-4">
+              <div class="media-body p-md-5 p-4">
                 <h5 class="mt-0 h4">Merriage Celebrations</h5>
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
                 <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-              </div>-->
+              </div>
             </div>
           </div>
         </div>
-      </div>-->
-    </section>
+      </div>
+    </section>-->
     <!-- END section -->
 
     <section class="site-section" id="section-gallery">
@@ -303,7 +301,7 @@
             <h2 class="display-4">Galeri</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              
               </div>
             </div>
           </div>
@@ -353,37 +351,37 @@
             <h2 class="display-4">Saran</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Berikan kami saran untuk kemajuan kami</p>
+                <p class="lead">Berikan saran anda untuk kemajuan kami</p>
               </div>
             </div>
           </div>
           
           
           <div class="col-md-4 site-animate">
-            <p><img src="<?php echo base_url('assets/images/about_img_1.jpg')?>" alt="" class="img-fluid"></p>
+            <p><img src="<?php echo base_url('assets/images/DSC00587.jpg')?>" alt="" class="img-fluid"></p>
             <p class="text-black">
-              Address: <br> 121 Street, Melbourne Victoria <br> 3000 Australia <br> <br>
-              Phone: <br> 90 987 65 44 <br> <br>
-              Email: <br> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+              Alamat: <br> Jalan Basuki Rahmat No. 230 <br> Tegal Besar, Jember <br> <br>
+              Telepon: <br> 081336641191 <br> <br>
+              Email: <br> <a href="mailto:kancakonakopijember@gmail.com">kancakonakopijember@gmail.com</a>
             </p>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-7 mb-5 site-animate">
             <form action="<?php echo base_url('AksiAdminSaran/postSaran')?>" method="post">
               <div class="form-group">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" class="form-control" name="nama" id="name" placeholder="Name">
+                <label for="name" class="sr-only">Nama</label>
+                <input type="text" class="form-control" name="nama" id="name" placeholder="Nama">
               </div>
               <div class="form-group">
                 <label for="email" class="sr-only">Email</label>
                 <input type="text" class="form-control" name="email" id="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <label for="message" class="sr-only">Message</label>
-                <textarea id="message" name="saran"  cols="30" rows="10" class="form-control" placeholder="Write your message"></textarea>
+                <label for="message" class="sr-only">Saran</label>
+                <textarea id="message" name="saran"  cols="30" rows="10" class="form-control" placeholder="Masukkan Saran Anda"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg" value="Send Message">
+                <input type="submit" class="btn btn-primary btn-lg" value="Kirim Saran">
               </div>
             </form>
           </div>
@@ -401,7 +399,7 @@
         <div class="row mb-5">
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-4 site-animate">
+             <!-- <div class="col-md-4 site-animate">
                 <h2 class="site-heading-2">About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, similique, delectus blanditiis odit expedita amet. Sed labore ipsum vel dolore, quis, culpa et magni autem sequi facere eos tenetur, ex?</p>
               </div>
@@ -442,7 +440,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
          
         </div>
         <div class="row site-animate">
@@ -456,8 +454,7 @@
             </div>
           </div>
           <div class="col-md-12 text-center">
-            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <p> Kancakona Kopi Jember ||  <i class="icon-heart" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -467,14 +464,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
     
 
-    <!-- Modal -->
+    <!-- Modal 
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="bg-image" style="background-image: url(<?php echo base_url('assets/images/DSC00275.jpg')?>);"></div>
+              </div>
+                <div class="col-lg-12 p-5">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="text-primary"><?php echo $ro->tanggal; ?></h5>
+                    <h5 class="mt-0 h4"><?php echo $ro->judul; ?></h5>
+                    <p class="mb-4 event-deskripsi"><?php echo htmlentities($ro->isi); ?></p>
+                  
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
     <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="row">
               <div class="col-lg-12">
-                <div class="bg-image" style="background-image: url(<?php echo base_url('assets/images/reservation_1.jpg')?>);"></div>
+                <div class="bg-image" style="background-image: url(<?php echo base_url('assets/images/DSC00275.jpg')?>);"></div>
               </div>
               <div class="col-lg-12 p-5">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
