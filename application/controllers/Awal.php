@@ -25,13 +25,15 @@ class Awal extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+	{	
+		$dEvent = $this->m_awal->ambilEvent('event',10);
 		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'),4);
 		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'),4);
 		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'),4);
 		$data = array('kopi'=>$dKopi,
 					  'minuman'=>$dMinu,
-					  'makanan'=>$dMaka);
+					  'makanan'=>$dMaka,
+					  'event'=>$dEvent);
 		$this->load->view('profil',$data);
 	}
 	
@@ -51,6 +53,10 @@ class Awal extends CI_Controller {
 		}else{
 			redirect("/");
 		}
+		
+	}
+	
+	public function tampilMenu(){
 		
 	}
 }
