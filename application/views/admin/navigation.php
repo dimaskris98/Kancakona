@@ -1,19 +1,19 @@
 <?php $aktif = $this->uri->segment(2);?>
 
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+<div id="sidebar"><a href="<?php echo base_url('Admin/')?>" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul>
-    <li class="<?php if($aktif=='home'){echo "active";} ?>"><a href="index.html"><i class="icon icon-home"></i> <span>Halaman Awal</span></a> </li>
+    <li class="<?php if($aktif=='home'){echo "active";} ?>"><a href="<?php echo base_url('Admin/')?>"><i class="icon icon-home"></i> <span>Halaman Awal</span></a> </li>
     <li class="<?php if($aktif=='event'){echo "active";} ?>"> <a href="<?php echo base_url('Admin/event')?>"><i class="icon icon-signal"></i> <span>Acara</span></a> </li>
     <!-- <li> <a href="<?php echo base_url('Admin/Widgets')?>"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li> -->
     <li class="<?php if($aktif=='menu'){echo "active";} ?>"><a href="<?php echo base_url('Admin/menu')?>"><i class="icon icon-th"></i> <span>Menu</span></a></li>
     <!-- <li><a href="<?php echo base_url('Admin/grid')?>"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li> -->
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Post</span> <span class="label label-important">3</span></a>
+    <!--<li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Post</span> <span class="label label-important">3</span></a>
       <ul>
         <li class="<?php if($aktif=='a'){echo "active";} ?>"><a href="form-common.html">Posting Menu</a></li>
         <li class="<?php if($aktif=='d'){echo "active";} ?>"><a href="form-validation.html">Posting Berita</a></li>
         <li class="<?php if($aktif=='d'){echo "active";} ?>"><a href="form-wizard.html">Form with Wizard</a></li>
       </ul>
-    </li>
+    </li>-->
     <!-- <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li> -->
     <li class="<?php if($aktif=='saran'){echo "active";} ?>"><a href="<?php echo base_url('Admin/saran')?>"><i class="icon icon-pencil"></i> <span>Saran</span></a></li>
     <!-- <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>

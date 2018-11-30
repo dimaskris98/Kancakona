@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/open-iconic-bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/animate.css')?>">   
@@ -43,18 +44,19 @@
       </div>
     </nav>
     <!-- END nav -->
-
-    <section class="site-cover" style="background-image: url(<?php echo base_url('assets/images/w.png')?>);" id="section-home">
+<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/w.png')?>);">
+    <section class="site-cover"  id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
             <h1 class="site-heading site-animate mb-3">KANCAKONA KOPI</h1>
             <p style="color:#f6f6f6"><font size="8" ><b>حب القهو من الإيمان</b></font></br>Hubbul Qahwa Minal Iman</p>    
-            <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
+            <p><a href="" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
           </div>
         </div>
       </div>
     </section>
+</div>
     <!-- END section -->
     
     <section class="site-section" id="section-about">
@@ -77,7 +79,11 @@
     </section>
     <!-- END section -->
     
-
+<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/DSC005872.jpg')?>);">
+	<!--<div class="caption">
+	<p style="color:#f6f6f6"><font size="6" ><i>ngopi <font size="3">&#x26AB</font> ngaji <font size="3">&#x26AB</font> berbagi</i></font></p>
+	</div>-->
+</div>
     <section class="site-section bg-light" id="section-offer">
       <div class="container">
         
@@ -117,6 +123,7 @@
       </div>
     </section>
     <!-- END section -->
+	
 
     <section class="site-section" id="section-menu">
       <div class="container">

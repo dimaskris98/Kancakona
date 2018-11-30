@@ -29,7 +29,28 @@ h1, h2, h3, h4, h5,
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
+.parallax {
+	position: relative;
+    min-height: 500px; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax .caption{
+	position: absolute;
+	top : 50%;
+	left: 0;;
+	width:100%;
+	font-family: 'Yesteryear', cursive;
+
+	text-align: center;
+	color:white;
+	border: 2px;
+}   
+	
 .text-primary {
   color: #FDA403 !important;
 }
