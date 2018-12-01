@@ -27,9 +27,9 @@ class Awal extends CI_Controller {
 	public function index()
 	{	
 		$dEvent = $this->m_awal->ambilEvent('event',10);
-		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'),4);
-		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'),4);
-		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'),4);
+		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'));
+		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'));
+		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'));
 		$data = array('kopi'=>$dKopi,
 					  'minuman'=>$dMinu,
 					  'makanan'=>$dMaka,
@@ -56,7 +56,9 @@ class Awal extends CI_Controller {
 		
 	}
 	
-	public function tampilMenu(){
-		
+	public function tampilEvent(){
+		$id = $this->uri->segment(3);
+		$data = $this->m_awal->ambilMenu('event',array('no_post'=>$id));
+		echo json_encode($data[0]);
 	}
 }

@@ -5,10 +5,10 @@ $(document).ready(function($) {
 	// loader
 	var loader = function() {
 		setTimeout(function() { 
-			if($('#site-loader').length > 0) {
-				$('#site-loader').removeClass('show');
+			if($('#site-loade').length > 0) {
+				$('#site-loade').removeClass('show');
 			}
-		}, 1);
+		}, 2000);
 	};
 	loader();
 

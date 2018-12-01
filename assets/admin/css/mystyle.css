@@ -129,6 +129,15 @@
 	height: 200px;
 	overflow: hidden;
 }
+.modalEventText{
+	 margin-right:10px; 
+	 margin-bottom:10px; 
+	 height: 200px;
+	 float: left ;
+	 width: 200px;
+	 background-size: cover; 
+	 overflow: hidden;
+}
 .event-deskripsi{
 	line-height: 1.5em;
 	max-height: 9em;

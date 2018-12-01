@@ -71,7 +71,7 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 site-animate img" data-animate-effect="fadeInRight">
-            <img src="<?php echo base_url('assets/images/aa.jpeg')?>" alt="kancakona" class="img-fluid">
+            <img src="<?php echo base_url('assets/images/aa.jpg')?>" alt="kancakona" class="img-fluid">
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
     <!-- MODAL EVENT DETAIL -->
     <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" style="max-width: 1000px!important" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="row">
@@ -611,7 +611,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- END Modal -->
 
     <!-- loader -->
-    <div id="site-loade" class="show fullscreen">
+    <div id="site-loader" class="show fullscreen">
     <!--<svg class="circular" width="48px" height="48px">
     <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
     <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
@@ -635,6 +635,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.animateNumber.min.js')?>"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="<?php echo base_url('assets/js/go')?>js/google-map.js"></script>
 
     <script src="<?php echo base_url('assets/js/main.js')?>"></script>
 	<script type="text/javascript">
@@ -646,7 +647,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				var isi = JSON.parse(text)
 				$('#eventJudul').html(isi.judul);
 				$('#eventTanggal').html(isi.tanggal);
-				$('#eventImg').css('background-image', "url('<?php echo base_url('assets/images/event');?>/"+isi.nama_gambar+"')");
+				$('#eventIMG').css('background-image',)<?php echo si
 				$('#eventText').html(isi.isi);
 			}
 		})
