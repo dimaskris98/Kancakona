@@ -25,7 +25,7 @@ class AksiAdminSaran extends CI_Controller {
 		
 		if($cek){
 					echo " <script>
-							alert('sarn anda terkirim berhasil disimpan');
+							alert('Terimakasih atas saran yang Anda berikan');
 							location.href = '".base_url()."';
 							</script>
 							";
