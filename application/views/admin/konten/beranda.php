@@ -1,9 +1,9 @@
    <div class="quick-actions_homepage">
       <ul class="quick-actions">
    
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Menu</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Saran</a> </li>
-        <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Posting Acara</a> </li>
+        <li class="bg_lo"> <a href="<?php echo base_url('Admin/menu')?>"> <i class="icon-th"></i> Menu</a> </li>
+        <li class="bg_lb"> <a href="<?php echo base_url('Admin/saran')?>"> <i class="icon-pencil"></i>Saran</a> </li>
+        <li class="bg_lg"> <a href="<?php echo base_url('Admin/event')?>"> <i class="icon-calendar"></i> Posting Acara</a> </li>
    
 
       </ul>
