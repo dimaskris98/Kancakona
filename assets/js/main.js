@@ -8,15 +8,18 @@ $(document).ready(function($) {
 			if($('#site-loade').length > 0) {
 				$('#site-loade').removeClass('show');
 			}
-		}, 2000);
+		}, 2500);
 	};
 	loader();
 
 	var carousel = function() {
-		$('.owl-carousel').owlCarousel({
+		$('.owl-one').owlCarousel({
 			loop: true,
 			margin: 10,
 			nav: true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:true,
 			stagePadding: 5,
 			nav: false,
 			navText: ['<span class="icon-chevron-left">', '<span class="icon-chevron-right">'],
@@ -33,7 +36,41 @@ $(document).ready(function($) {
 			}
 		});
 	};
+	
+	var carousel2 = function() {
+		$('.owl-two').owlCarousel({
+			loop: false,
+			dots:true,
+			margin: 10,
+			nav: true,
+			stagePadding: 5,
+			nav: false,
+			navText: ['<span class="icon-chevron-left">', '<span class="icon-chevron-right">'],
+			responsive:{
+				0:{
+					items: 1
+				},
+				600:{
+					items: 1
+				},
+				1000:{
+					items: 1
+				}
+			}
+		});
+	};
+	
+	$('.owl-one').on('mousewheel', '.owl-stage', function (e) {
+    	if (e.deltaY>0) {
+        	$('.owl-one').trigger('next.owl');
+    	} else {
+        	$('.owl-one').trigger('prev.owl');
+    	}
+    	e.preventDefault();
+	});
+	
 	carousel();
+	carousel2();
 
 	// scroll
 	var scrollWindow = function() {
@@ -185,11 +222,14 @@ $(document).ready(function($) {
     }
   });
 
-  $('#m_date').datepicker({
+  $('#r_tanggal').datepicker({
 	  'format': 'm/d/yyyy',
 	  'autoclose': true
 	});
-	$('#m_time').timepicker();
+	$('#r_waktu').timepicker({
+    'minTime': '2:00pm',
+    'maxTime': '11:30pm'
+});
 
 
 

@@ -35,7 +35,7 @@
                   <td class="s-nomer"><p><?php echo $row->nomer; ?></p></td>
                   <td class="s-empat"><p><?php echo $row->saran; ?></p></td>
                   <td class="s-lima">
-                  	<a  href="<?php echo base_url()."Admin/delSaran/".$row->no_saran ?>" class="btn btn-mini btn-danger">Hapus</a>
+                  	<a  href="<?php echo base_url()."AksiAdminSaran/delSaran/".$row->no_saran ?>" class="btn btn-mini btn-danger">Hapus</a>
                   </td>
                 </tr>
                 <?php } ?>

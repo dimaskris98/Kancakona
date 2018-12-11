@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 	public function index(){
 		//$cek = $this->session->userdata('admin');
 		//if(isset($cek)){
-			$this->load->view('admin/konten/beranda');
+			$this->load->view('admin/konten/home');
 			$this->load->view('admin/footer');
 		//}else{
 			//echo '
@@ -27,6 +27,26 @@ class Admin extends CI_Controller {
 	//	}
 		//$this->load->view('admin/footer');
 		
+		
+	}
+	//PEMESANAN CONTROLLER
+	public function reservasi(){
+		if(null !== $this->input->get('tanggal')){
+			$tanggal = $this->input->get('tanggal');
+			$waktu = $this->input->get('waktu');
+			$jumlah = $this->input->get('jumlah');
+			
+			$where = "tgl_pemesanan = '$tanggal' OR waktu = '$waktu' OR jumlah = $jumlah";
+			$data = $this->M_aksiadmin->getPemesanan($where);
+			$this->load->view('admin/konten/reservasi',$var = array('data' =>$data));
+			$this->load->view('admin/footer');
+			
+			
+		}else{
+			$data = $this->M_aksiadmin->getPemesanan2();
+			$this->load->view('admin/konten/reservasi',$var = array('data' =>$data));
+			$this->load->view('admin/footer');
+		}
 		
 	}
 	

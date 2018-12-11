@@ -37,6 +37,24 @@ class Awal extends CI_Controller {
 		$this->load->view('profil',$data);
 	}
 	
+	public function pesan(){
+		$nama = $this->input->post('nama');
+		$email = $this->input->post('email');
+		$hp = $this->input->post('hp');
+		$jumlah = $this->input->post('jumlah');
+		$tanggal = $this->input->post('tanggal');
+		$waktu = $this->input->post('waktu');
+		$keterangan = $this->input->post('keterangan');
+		
+		$cek = $this->m_awal->cekTanggal($tanggal,$waktu,$jumlah);
+		
+		if($cek){
+			echo "1";
+		}else{
+			echo "0";
+		}
+	}
+	
 	public function auth()
 	{
 		$username = $this->input->post('username');

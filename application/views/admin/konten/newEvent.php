@@ -127,3 +127,6 @@ $("#imgInp").change(function(){
     readURL(this);
 });
 </script>
+<script type="text/javascript">
+	$('.textarea_editor').wysihtml5();
+</script>

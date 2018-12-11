@@ -1,6 +1,53 @@
+
+.form-vertical .form-actions {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.pad15{
+	padding-left: 15px;
+	padding-right: 15px;
+	width: auto;
+}
 .table.event {
 	table-layout: fixed;
 }
+.table .r-satu{
+	width: 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+.table .r-dua{
+	width: 10%;
+	vertical-align: middle;
+}
+.table .r-tiga{
+	vertical-align: middle;
+	width: 20%;
+}
+.table .r-tiga p{
+	vertical-align: middle;
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.table .r-empat{
+	width: 40%
+}
+.table .r-empat p{
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+	
+}
+.table .r-lima{
+	width: 125px;
+	text-align: center;
+	vertical-align: middle;
+}
+
 .table .satu{
 	width: 12px;
 	text-align: center;
@@ -122,6 +169,12 @@
 	height: auto;
 	width: auto;
 }
+.text-white{
+	color: #ffffff;
+}
+.item .pad-10{
+	padding: 10px;
+}
 .event-img-div{
 	background-size: cover;
 	text-align: center;
@@ -132,11 +185,15 @@
 .modalEventText{
 	 margin-right:10px; 
 	 margin-bottom:10px; 
-	 height: 200px;
+	 height: 300px;
 	 float: left ;
-	 width: 200px;
-	 background-size: cover; 
+	 width: 100%;
+	 background-size: cover;
+	 background-position: center; 
 	 overflow: hidden;
+}
+.cup{
+	box-sizing: content-box;
 }
 .event-deskripsi{
 	line-height: 1.5em;

@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5,
 }
 
 .menu-item img {
-  width: 100px;
+  width: 100px !important;
   border-radius: 50%;
 }
 
@@ -694,7 +694,7 @@ textarea.form-control {
 }
 
 .site-media {
-  background: #fff;
+  background: #ffffffd4;
   border-radius: 0px;
 }
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Website KANCAKONA KOPI</title>
@@ -84,24 +84,24 @@
 	<!--<div class="caption">
 	<p style="color:#f6f6f6"><font size="6" ><i>ngopi <font size="3">&#x26AB</font> ngaji <font size="3">&#x26AB</font> berbagi</i></font></p>
 	</div>-->
-</div>
-    <section class="site-section bg-light" id="section-offer">
+<!--</div>-->
+<section class="site-section" id="section-offer">
       <div class="container">
         
         <div class="row">
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Event</h2>
+            <h2 class="display-4 text-white">Event</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
               </div>
             </div>
           </div>
           <div class="col-md-12">
-            <div class="owl-carousel site-owl">
+            <div class="owl-carousel owl-one site-owl">
             
 			<?php foreach($event as $ro){ ?>
               <div class="item">
-                <div class="media d-block mb-4 text-center site-media site-animate border-0">
+                <div class="media d-block mb-4 text-center site-media site-animate border-0 pad-10">
                   <div class="event-img-div" style="background-image: url('<?php if($ro->nama_gambar!=""){
                   			echo base_url('assets/images/event/'.str_replace(' ','_',$ro->nama_gambar));}?>')">
                   </div>
@@ -110,24 +110,17 @@
                     <h5 class="text-primary"><?php echo $ro->tanggal; ?></h5>
                     <h5 class="mt-0 h4"><?php echo $ro->judul; ?></h5>
                     <p class="mb-4 event-deskripsi"><?php echo htmlentities($ro->isi); ?></p>
-<<<<<<< HEAD
                     <p class="mb-0"><a href="" data-toggle="modal" onclick="tampilEvent(<?php echo $ro->no_post;  ?>)" data-target="#eventModal" class="btn btn-primary btn-sm">Baca Detail</a></p>
-=======
-                    <p class="mb-0"><a href="<?php echo site_url('href= target="_blank" class="btn btn-primary btn-sm" btn-lg site-animate" data-toggle="modal" data-target="#eventModal"') ?>" >Baca Detail</a></p>
->>>>>>> 9961a9b92a82145c0ac2a13e6451b0aa28fa357b
                   </div>
                 </div>
               </div>
               <?php } ?>
-
-              
-
             </div>
           </div>
-          
         </div>
       </div>
-    </section>
+</section>
+    </div>
     <!-- END section -->
 	
 
@@ -159,10 +152,17 @@
 
             <div class="tab-content text-left">
               <div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab">
+                <div class="owl-carousel  owl-two site-owl">
                 <div class="row">
                   
-                  <?php
+                  <?php $index=0;
                   	foreach($minuman as $row) { 
+                  	if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+                  	}
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
@@ -174,18 +174,27 @@
                       </div>
                     </div>
                     </div>
-                    <?php } ?>
+                    <?php  $index++; } ?>
 
                     
+                  </div>
                   </div>
                 </div>
              
               
               
               <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
-                <div class="row">
-                  <?php
+                
+                	<div class="owl-carousel  owl-two site-owl">
+                	<div class="row">
+                  <?php $index = 0;
                   	foreach($kopi as $row) { 
+                  	if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+					  }
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
@@ -197,14 +206,24 @@
                       </div>
                     </div>
                     </div>
-                    <?php } ?>
-                </div>
+                    
+                    <?php
+                    $index++; } ?>
+                    </div>
+              </div>
               </div>
               
               <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                <div class="owl-carousel  owl-two site-owl">
                 <div class="row">
-                  <?php
+                  <?php $index=0;
                   	foreach($makanan as $row) {
+                  		if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+                  	}
                   	?>
                   		<div class="col-md-6 site-animate">
                     <div class="media menu-item">
@@ -216,7 +235,7 @@
                       </div>
                     </div>
                     </div>
-                    <?php } ?>
+                    <?php $index++; } ?>
                 </div>
               </div>
             </div>
@@ -514,54 +533,48 @@
                   <small>TUTUP </small><span aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="mb-4">Pesan Tempat</h1>  
-                <form action="#" method="post">
+                <form action="<?php echo base_url('Awal/pesan');?>" method="post" id="reservasiForm"">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_fname">Nama Depan</label>
-                      <input type="text" class="form-control" id="m_fname">
+                      <label for="m_fname">Nama Lengkap <span style="color: red;font-size: 20px">*</span></label>
+                      <input type="text" class="form-control " id="r_nama" name="nama">
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_lname">Nama Belakang</label>
-                      <input type="text" class="form-control" id="m_lname">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="m_email">Email</label>
-                      <input type="email" class="form-control" id="m_email">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="r_email" name="email">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_people">Jumlah Orang</label>
-                      <select name="" id="m_people" class="form-control">
+                      <label for="jumlah">Jumlah Orang <span style="color: red;font-size: 20px">*</span></label>
+                      <select name="jumlah" id="r_jumlah" class="form-control">
                         <option value="1">1 Orang</option>
                         <option value="2">2 Orang</option>
                         <option value="3">3 Orang</option>
-                        <option value="4+">4+ Orang</option>
+                        <option value="4">4+ Orang</option>
                       </select>
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_phone">Nomor Hp</label>
-                      <input type="text" class="form-control" id="m_phone">
+                      <label for="r_hp">Nomor Hp <span style="color: red;font-size: 20px">*</span></label>
+                      <input type="text" class="form-control" id="r_hp" name="hp">
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_date">Tanggal</label>
-                      <input type="text" class="form-control" id="m_date">
+                      <label for="m_date">Tanggal <span style="color: red;font-size: 20px">*</span></label>
+                      <input type="text" class="form-control" id="r_tanggal" name="tanggal">
                     </div>
                     <div class="col-md-6 form-group">
-                      <label for="m_time">Waktu</label>
-                      <input type="text" class="form-control" id="m_time">
+                      <label for="m_time">Waktu <span style="color: red;font-size: 20px">*</span></label>
+                      <input type="text" class="form-control" id="r_waktu" name="waktu">
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="m_message">Keterangan Tambahan</label>
-                      <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>
+                      <textarea class="form-control" id="r_keterangan" cols="30" rows="7" name="keterangan"></textarea>
                     </div>
                   </div>
                   
@@ -590,15 +603,15 @@
                   <small>TUTUP </small><span aria-hidden="true">&times;</span>
                 </button>
                 <h1 class="mb-4">Login Sebagai Admin</h1>  
-                <form action="Awal/auth" method="post">
+                <form action="Awal/auth" method="post" onsubmit="return validateLogin()">
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="m_fname">Username</label>
-                      <input type="text" class="form-control" name="username">
+                      <input type="text" class="form-control" name="username" id="f_user">
                     </div>
                     <div class="col-md-12 form-group">
                       <label for="m_lname">Password</label>
-                      <input type="password" class="form-control" name="password">
+                      <input type="password" class="form-control" name="password" id="f_pass">
                     </div>
                     <div class="col-md-12 form-group">
                       <input type="submit" value="Masuk" name="submit" class="btn btn-info" style="width: 100%" id="m_submit">
@@ -623,14 +636,22 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <small>TUTUP </small><span aria-hidden="true">&times;</span>
                 </button>
-                <h3 id="eventJudul">JUDUL EVENT</h3>
-                <h5 id="eventTanggal">TANGGAL</h5>
+                
               
               </div>
               <div class="col-lg-12 p-5" style="padding-top: 0px!important">
-              	<div id="eventImg" class="modalEventText">            	
-                </div>
-                <p id="eventText"></p>
+              	<div id="eventImg" class="modalEventText"></div>
+                
+              </div>
+              
+              <div class="col-lg-12 p-5" style="padding-top: 0px !important">
+              	<div class="row">
+              		<div class="col-sm-12">
+              			<h3 style="float: left;" id="eventJudul">JUDUL EVENT</h3>
+                <h5 class="text-primary" style="float: right" id="eventTanggal">TANGGAL</h5>
+              		</div>
+              	</div>
+              	<p id="eventText"></p>
               </div>
             </div>
             
@@ -661,6 +682,7 @@
     <script src="<?php echo base_url('assets/js/jquery.easing.1.3.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.waypoints.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/owl.carousel.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.mousewheel.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/bootstrap-datepicker.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
@@ -668,6 +690,80 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 
     <script src="<?php echo base_url('assets/js/main.js')?>"></script>
+    <script type="text/javascript">
+    	function validateLogin(){
+			if($("#f_user").val() == ""){
+				alert('Mohon isi Username anda !');
+				$("#f_user").focus();
+				return false;
+			}else if($("#f_pass").val() == ""){
+				alert('Mohon isi Password anda !');
+				$("#f_pass").focus();	
+				return false;
+			}else{
+				return true;
+			}
+		}
+		
+		function validatePemesanan(){
+			var nama = $('#r_nama');
+			var tanggal = $('#r_tanggal');
+			var waktu = $('#r_waktu');
+			var hp = $('#r_hp');
+			//var nama = $('#r_nama');
+			
+			if(nama.val() == ""){
+				alert('Isi data terlebih dahulu !');
+				nama.focus();
+				return false;
+			}else if(tanggal.val() == ""){
+				alert('Isi data terlebih dahulu !');
+				tanggal.focus();
+				return false;
+			}else if(waktu.val() == ""){
+				alert('Isi data terlebih dahulu !');
+				waktu.focus();
+				return false;
+			}else if(hp.val() == ""){
+				alert('Isi data terlebih dahulu !');
+				hp.focus();
+				return false;
+			}else{
+				return true;
+			}
+		} 
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#reservasiForm').on('submit', function(e) {
+		        e.preventDefault();
+		        var cek = validatePemesanan();
+		        
+		        if(cek){
+				$.ajax({
+		            url : $(this).attr('action'),
+		            type: "POST",
+		            data: $(this).serialize(),
+		            success: function (data) {
+		            	if(data=="1"){
+							alert('ok');
+							$('#reservationModal').modal('toggle');
+						}else if(data == "0"){
+							alert('noob');
+						}else {
+							alert(data);
+						}
+		            },
+		            error: function (jXHR, textStatus, errorThrown) {
+		                alert(errorThrown);
+		            }
+		        });	
+				}else{
+				} 
+		    });
+		});
+
+    </script>
 	<script type="text/javascript">
 	function tampilEvent(event){
 		$.ajax({
@@ -682,6 +778,10 @@
 			}
 		})
 	};
+	
+	function tabTampil(event){
+		$('.tab-content').children('.active').removeClass('.active');
+	}
 		
 	</script>
     

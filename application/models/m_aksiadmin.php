@@ -3,6 +3,15 @@ class M_aksiadmin extends CI_Model {
 	function __construct() {
 		
 	}
+	//DATA MODEL RESERVASI
+	public function getPemesanan($where){
+		$data = $this->db->get_where('pemesanan',$where);
+		return($data->result());
+	}
+	public function getPemesanan2(){
+		$data = $this->db->get('pemesanan');
+		return($data->result());
+	}
 	//DATA MODEL EVENT
 	public function getEvent(){
 		$data = $this->db->get('event');
