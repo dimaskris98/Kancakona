@@ -23,6 +23,9 @@ $link = $this->uri->segment(2);
     ?>  
     
     </div>
+=======
+    <div id="breadcrumb"> <a href="<?php echo base_url('Admin/')?>" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+>>>>>>> c0f27dcdefe5d40b58dd9262bfc0882acb996151
   </div>
 <!--End-breadcrumbs-->
 

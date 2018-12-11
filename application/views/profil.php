@@ -45,7 +45,7 @@
       </div>
     </nav>
     <!-- END nav -->
-<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/w.png')?>);">
+<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/kk.jpg')?>);">
     <section class="site-cover"  id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
@@ -390,7 +390,7 @@
           
           
           <div class="col-md-4 site-animate">
-            <p><img src="<?php echo base_url('assets/images/DSC00587.jpg')?>" alt="" class="img-fluid"></p>
+            <p><iframe width="300" height="250" src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             <p class="text-black">
               Alamat: <br> Jalan Basuki Rahmat No. 230 <br> Tegal Besar, Jember <br> <br>
               Telepon: <br> 081336641191 <br> <br>
@@ -422,7 +422,7 @@
         </div>
       </div>
     </section>
-    <div id="map"></div>
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.856413307632!2d113.6962672!3d-8.2063644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cb6c0670a70591!2sKanca+Kona+Kopi!5e0!3m2!1sid!2sid!4v1543729686761" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     <!-- END section -->
     
 
@@ -480,7 +480,7 @@
             <div class="site-footer-widget mb-4">
               <ul class="site-footer-social list-unstyled ">
                 <li class="site-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="site-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="site-animate"><a href="https://www.facebook.com/Kancakona-Kopi-Iaa-Jember-717024918628485/"><span class="icon-facebook"></span></a></li>
                 <li class="site-animate"><a href="https://www.instagram.com/kancakonakopijember/"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>

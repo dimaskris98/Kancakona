@@ -25,7 +25,7 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Admin Web Kancakona Kopi</a></h1>
+  <h1><a href="<?php echo base_url('Admin/')?>"Admin Kancakona Kopi></a></h1>
 </div>
 <!--close-Header-part--> 
 
