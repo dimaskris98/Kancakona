@@ -52,8 +52,9 @@ class Admin extends CI_Controller {
 	
 	//EVENT CONTROLLER
 	public function event(){
+		$htmlTag = array('&lt;div&gt;','&lt;/div&gt;');
 		$data = $this->M_aksiadmin->getEvent();
-		$this->load->view('admin/konten/event',$var = array('data' =>$data));
+		$this->load->view('admin/konten/event',$var = array('data' =>$data,'html'=>$htmlTag));
 		$this->load->view('admin/footer');
 	}
 	

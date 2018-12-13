@@ -86,28 +86,28 @@
 </treenode>
 <treenode node="VIEWPATH;PHP:PHP Word;E:\School Project\htdocs\Kancakona\index.php;f9;282;17;282;;;;vpos;;v;;r$view_folder;;d-1,-1;;b0,0;;m">
 </treenode>
-<treenode node="Admin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f0;3;1;109;;;;vpos;;vCI_Controller;;c;;r;;d34,3;;b0,0;;m">
+<treenode node="Admin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f0;3;1;110;;;;vpos;;vCI_Controller;;c;;r;;d34,3;;b0,0;;m">
 <treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f1;4;2;12;;;;vpos;;v;;r;;d24,4;;b0,0;;m">
 </treenode>
-<treenode node="editEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;64;2;71;;;;vpos;;v;;r;;d28,64;;b1,0;;m">
+<treenode node="editEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;65;2;72;;;;vpos;;v;;r;;d28,65;;b1,0;;m">
 </treenode>
-<treenode node="editMenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;86;2;93;;;;vpos;;v;;r;;d27,86;;b1,0;;m">
+<treenode node="editMenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;87;2;94;;;;vpos;;v;;r;;d27,87;;b1,0;;m">
 </treenode>
-<treenode node="event;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;53;2;57;;;;vpos;;v;;r;;d24,53;;b1,0;;m">
+<treenode node="event;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;53;2;58;;;;vpos;;v;;r;;d24,53;;b1,0;;m">
 </treenode>
 <treenode node="index;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;14;2;30;;;;vpos;;v;;r;;d24,14;;b1,0;;m">
 </treenode>
-<treenode node="logout;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;105;2;108;;;;vpos;;v;;r;;d25,105;;b1,0;;m">
+<treenode node="logout;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;106;2;109;;;;vpos;;v;;r;;d25,106;;b1,0;;m">
 </treenode>
-<treenode node="menu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;75;2;79;;;;vpos;;v;;r;;d23,75;;b1,0;;m">
+<treenode node="menu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;76;2;80;;;;vpos;;v;;r;;d23,76;;b1,0;;m">
 </treenode>
-<treenode node="newEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;59;2;62;;;;vpos;;v;;r;;d27,59;;b1,0;;m">
+<treenode node="newEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;60;2;63;;;;vpos;;v;;r;;d27,60;;b1,0;;m">
 </treenode>
-<treenode node="newMenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f9;81;2;84;;;;vpos;;v;;r;;d27,81;;b1,0;;m">
+<treenode node="newMenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f9;82;2;85;;;;vpos;;v;;r;;d27,82;;b1,0;;m">
 </treenode>
 <treenode node="reservasi;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;32;2;50;;;;vpos;;v;;r;;d28,32;;b1,0;;m">
 </treenode>
-<treenode node="saran;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;99;2;103;;;;vpos;;v;;r;;d24,99;;b1,0;;m">
+<treenode node="saran;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Admin.php;f8;100;2;104;;;;vpos;;v;;r;;d24,100;;b1,0;;m">
 </treenode>
 </treenode>
 <treenode node="AksiAdmin;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdmin.php;f0;3;1;66;;;;vpos;;vCI_Controller;;c;;r;;d38,3;;b0,0;;m">
@@ -150,21 +150,21 @@
 <treenode node="postSaran;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminSaran.php;f8;10;2;39;;;;vpos;;v;;r;;d28,10;;b1,0;;m">
 </treenode>
 </treenode>
-<treenode node="Awal;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f0;3;1;75;;;;vpos;;vCI_Controller;;c;;r;;d33,3;;b0,0;;m">
+<treenode node="Awal;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f0;3;1;83;;;;vpos;;vCI_Controller;;c;;r;;d33,3;;b0,0;;m">
 <treenode node="__construct;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f1;5;2;9;;;;vpos;;v;;r;;d23,5;;b0,0;;m">
 </treenode>
-<treenode node="auth;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;51;2;68;;;;vpos;;v;;r;;d1,52;;b1,0;;m">
+<treenode node="auth;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;59;2;76;;;;vpos;;v;;r;;d1,60;;b1,0;;m">
 </treenode>
-<treenode node="index;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;26;2;37;;;;vpos;;v;;r
+<treenode node="index;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;26;2;39;;;;vpos;;v;;r
 Definition
     index()
 
 Description
      Index Page for this controller.;;d1,27;;b1,0;;m">
 </treenode>
-<treenode node="pesan;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;39;2;49;;;;vpos;;v;;r;;d24,39;;b1,0;;m">
+<treenode node="pesan;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;41;2;57;;;;vpos;;v;;r;;d24,41;;b1,0;;m">
 </treenode>
-<treenode node="tampilEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;70;2;74;;;;vpos;;v;;r;;d30,70;;b1,0;;m">
+<treenode node="tampilEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\controllers\Awal.php;f8;78;2;82;;;;vpos;;v;;r;;d30,78;;b1,0;;m">
 </treenode>
 </treenode>
 <treenode node="CI_Benchmark;PHP:Class Name;E:\School Project\htdocs\Kancakona\system\core\Benchmark.php;f0;51;1;132;;;;vpos;;v;;r Definition     class CI_Benchmark  Description      Benchmark Class;;d19,51;;b0,0;;m">
@@ -3427,12 +3427,12 @@ Description
 <treenode node="updateMenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php;f8;72;2;75;;;;vpos;;v;;r;;d38,72;;b1,0;;mpk;;pdata;;p">
 </treenode>
 </treenode>
-<treenode node="M_awal;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\models\Codelobster0.php;f0;1;1;10;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f0;1;1;17;;;;vpos;;vCI_Model;;c;;r;;d30,1;;b0,0;;m">
-<treenode node="ambilEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;;;vpos;;v;;r;;d35,8;;b0,0;;mtable;;plimit;;p">
+<treenode node="M_awal;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\models\Codelobster0.php;f0;1;1;10;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f0;1;1;33;;;;vpos;;vCI_Model;;c;;r;;d30,1;;b0,0;;m">
+<treenode node="ambilEvent;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;8;2;11;;;;vpos;;v;;r;;d35,8;;b0,0;;mtable;;plimit;;p">
 </treenode>
-<treenode node="ambilmenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\Codelobster0.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;;;vpos;;v;;r;;d46,3;;b0,0;;mtable;;pwhere;;plimit;;p">
+<treenode node="ambilmenu;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\Codelobster0.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;3;2;6;;;;vpos;;v;;r;;d46,3;;b0,0;;mtable;;pwhere;;plimit;;p">
 </treenode>
-<treenode node="cekTanggal;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;13;2;15;;;;vpos;;v;;r;;d34,13;;b0,0;;mtgl;;pwaktu;;p">
+<treenode node="cekTanggal;PHP:Function Name;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;13;2;31;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;13;2;31;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;13;2;31;;E:\School Project\htdocs\Kancakona\application\models\m_awal.php;f1;13;2;31;;;;vpos;;v;;r;;d40,13;;b0,0;;mtgl;;pwaktu;;pmeja;;p">
 </treenode>
 </treenode>
 <treenode node="M_login;PHP:Class Name;E:\School Project\htdocs\Kancakona\application\models\m_login.php;f0;1;1;7;;;;vpos;;vCI_Model;;c;;r;;d30,1;;b0,0;;m">

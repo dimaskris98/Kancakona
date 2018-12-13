@@ -25,13 +25,13 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="<?php echo base_url('Admin/')?>"Admin Kancakona Kopi></a></h1>
+  <h1><a href="<?php echo base_url('Admin/')?>">Admin Kancakona Kopi></a></h1>
 </div>
 <!--close-Header-part--> 
 
 
 <!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
+<div id="user-nav" class="navbar navbar-inverse right">
   <ul class="nav">
    
     <li class=""><a onclick="logout()" style="cursor: pointer;"><i class="icon icon-share-alt "></i> <span class="text">Logout</span></a></li>

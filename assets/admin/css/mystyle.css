@@ -1,4 +1,13 @@
-
+.right{
+	right: 0px;
+	left: auto!important;
+}
+#content-header .wysihtml5-toolbar li .btn-group{
+	margin-top: 0px;!
+	float: none;
+	right: 0px;
+	position: relative;
+}
 .form-vertical .form-actions {
 	margin-top: 0;
 	margin-bottom: 0;

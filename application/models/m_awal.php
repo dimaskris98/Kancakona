@@ -27,9 +27,13 @@ class M_awal extends CI_Model {
 		}else{
 			return FALSE;
 		}
-		
-		
 	}
+	
+	function pesanTempat($data){
+		$sql = $this->db->insert('pemesanan',$data);
+		return $sql;
+	}
+		
 
 }
 ?>

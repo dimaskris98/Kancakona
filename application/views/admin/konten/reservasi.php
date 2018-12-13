@@ -70,17 +70,16 @@
               	
               <?php foreach($data as $row){?>
                 <tr class="gradeX">
-                  <td class="satu">
-                  <input type="checkbox" name="no_post[]" value="<?php echo $row->no_post ?>" /></td>
-                  <td class="r-dua"><?php echo $row->tanggal;?></td>
-                  <td class="r-dua"><p><?php echo $row->judul; ?></p></td>
-                  <td class="r-dua"><p><?php echo $row->judul; ?></p></td>
-                  <td class="r-tiga"><p><?php echo $row->judul; ?></p></td>
-                  <td class="r-empat"><p><?php echo htmlentities($row->isi); ?></p></td>
+                  <td class="satu"><input type="checkbox" name="no_pemesanan[]" value="<?php echo $row->no_pemesanan ?>" /></td>
+                  <td class="r-dua"><?php echo $row->tgl_pemesanan;?></td>
+                  <td class="r-dua"><p><?php echo $row->waktu; ?></p></td>
+                  <td class="r-dua"><p><?php echo $row->jumlah; ?></p></td>
+                  <td class="r-tiga"><p><?php echo $row->nama; ?></p></td>
+                  <td class="r-empat"><p><?php echo $row->keterangan; ?></p></td>
                   <td class="r-lima">
-                  	<a  href="<?php echo base_url()."Admin/detPemesanan/".$row->no_post ?>" class="btn btn-mini btn-success">Detail</a>
-                  	<a  href="<?php echo base_url()."Admin/editPemesanan/".$row->no_post ?>" class="btn btn-mini btn-info">Edit</a>
-                  	<a  href="<?php echo base_url()."AksiAdminPemesanan/delPemesanan/".$row->no_post ?>" class="btn btn-mini btn-danger">Hapus</a>
+                  	<a  href="<?php echo base_url()."Admin/detPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-success">Detail</a>
+                  	<a  href="<?php echo base_url()."Admin/editPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-info">Edit</a>
+                  	<a  href="<?php echo base_url()."AksiAdminPemesanan/delPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-danger">Hapus</a>
                   </td>
                 </tr>
                 <?php } ?>
@@ -108,8 +107,6 @@
 <script src="<?php echo base_url('assets/admin/js/matrix.tables.js')?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap-datepicker.js')?>"></script>
-
-<script src="<?php echo base_url('assets/admin/js/matrix.form_validation.js')?>"></script>
 
 <script type="text/javascript">
 	$('#waktu').timepicker();

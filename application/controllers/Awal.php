@@ -26,6 +26,7 @@ class Awal extends CI_Controller {
 	 */
 	public function index()
 	{	
+		$htmlTag = array('&lt;div&gt;','&lt;/div&gt;');
 		$dEvent = $this->m_awal->ambilEvent('event',10);
 		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'));
 		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'));
@@ -33,7 +34,8 @@ class Awal extends CI_Controller {
 		$data = array('kopi'=>$dKopi,
 					  'minuman'=>$dMinu,
 					  'makanan'=>$dMaka,
-					  'event'=>$dEvent);
+					  'event'=>$dEvent
+					  );
 		$this->load->view('profil',$data);
 	}
 	
@@ -49,7 +51,22 @@ class Awal extends CI_Controller {
 		$cek = $this->m_awal->cekTanggal($tanggal,$waktu,$jumlah);
 		
 		if($cek){
-			echo "1";
+			$data = array(
+						'no_pemesanan'=>'',
+						'tgl_pemesanan'=>$tanggal,
+						'nama'=>$nama,
+						'waktu'=>$waktu,
+						'email'=>$email,
+						'no_hp'=>$hp,
+						'keterangan'=>$keterangan,
+						'jumlah'=>$jumlah);
+			$cek2 = $this->m_awal->pesanTempat($data);
+			if($cek2){
+				echo '1';
+			}else{
+				echo '2';
+			}
+						
 		}else{
 			echo "0";
 		}

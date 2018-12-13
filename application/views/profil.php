@@ -109,7 +109,8 @@
                   <div class="media-body p-md-5 p-4">
                     <h5 class="text-primary"><?php echo $ro->tanggal; ?></h5>
                     <h5 class="mt-0 h4"><?php echo $ro->judul; ?></h5>
-                    <p class="mb-4 event-deskripsi"><?php echo htmlentities($ro->isi); ?></p>
+                    <p class="mb-4 event-deskripsi">
+                    	<?php echo str_replace($html,"",htmlentities($ro->isi)); ?></p>
                     <p class="mb-0"><a href="" data-toggle="modal" onclick="tampilEvent(<?php echo $ro->no_post;  ?>)" data-target="#eventModal" class="btn btn-primary btn-sm">Baca Detail</a></p>
                   </div>
                 </div>
@@ -390,7 +391,7 @@
           
           
           <div class="col-md-4 site-animate">
-            <p><iframe width="300" height="250" src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <p><iframe src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" style="width:100%;min-height:250px" allowfullscreen></iframe></p>
             <p class="text-black">
               Alamat: <br> Jalan Basuki Rahmat No. 230 <br> Tegal Besar, Jember <br> <br>
               Telepon: <br> 081336641191 <br> <br>
@@ -746,11 +747,13 @@
 		            data: $(this).serialize(),
 		            success: function (data) {
 		            	if(data=="1"){
-							alert('ok');
+							alert('Pemesanan Berhasil');
 							$('#reservationModal').modal('toggle');
 						}else if(data == "0"){
-							alert('noob');
-						}else {
+							alert('Maaf. Kursi Sedang Penuh');
+						}else if(data== '2'){
+							alert('Maaf, Pemesanan Gagal');
+						}else{
 							alert(data);
 						}
 		            },
