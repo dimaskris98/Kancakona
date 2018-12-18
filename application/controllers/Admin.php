@@ -50,6 +50,16 @@ class Admin extends CI_Controller {
 		
 	}
 	
+	public function detPemesanan(){
+		$id = $this->uri->segment(3);
+		$data = $this->M_aksiadmin->getPemesananRow(array('no_pemesanan'=>$id));
+		
+		$tanggal = $this->M_aksiadmin->ubahTanggal($data->tgl_pemesanan);
+			
+		$this->load->view('admin/konten/detPemesanan',$var = array('data'=>$data,'tgl'=>$tanggal));
+		$this->load->view('admin/footer');
+	}
+	
 	//EVENT CONTROLLER
 	public function event(){
 		$htmlTag = array('&lt;div&gt;','&lt;/div&gt;');

@@ -15,7 +15,7 @@
       			<div class="span4 control-group">
       				<label class="control-label">Tanggal :</label>
       				<div class="controls">
-      					<input type="text" class="span12" name="tanggal" id="tanggal" placeholder="Tanggal..."/>
+      					<input type="text" class="span12" name="tanggal" id="tanggal" placeholder="Tanggal..." autocomplete="off"/>
       				</div>
       			</div>
       			<div class="span4 control-group">
@@ -27,7 +27,12 @@
       			<div class="span4 control-group">
       				<label class="control-label">Jumlah Orang :</label>
       				<div class="controls">
-      					<input type="text" class="span12" name="jumlah" id="jumlah" placeholder="Jumlah..."/>
+      					<select name="jumlah" id="jumlah" class="span12">
+                        <option value="1">1 Orang</option>
+                        <option value="2">2 Orang</option>
+                        <option value="3">3 Orang</option>
+                        <option value="4">4+ Orang</option>
+                      </select>
       				</div>
       			</div>
       			
@@ -72,9 +77,9 @@
                 <tr class="gradeX">
                   <td class="satu"><input type="checkbox" name="no_pemesanan[]" value="<?php echo $row->no_pemesanan ?>" /></td>
                   <td class="r-dua"><?php echo $row->tgl_pemesanan;?></td>
-                  <td class="r-dua"><p><?php echo $row->waktu; ?></p></td>
-                  <td class="r-dua"><p><?php echo $row->jumlah; ?></p></td>
-                  <td class="r-tiga"><p><?php echo $row->nama; ?></p></td>
+                  <td class="r-dua"><?php echo $row->waktu; ?></td>
+                  <td class="r-dua"><?php echo $row->jumlah; ?></td>
+                  <td class="r-tiga"><?php echo $row->nama; ?></td>
                   <td class="r-empat"><p><?php echo $row->keterangan; ?></p></td>
                   <td class="r-lima">
                   	<a  href="<?php echo base_url()."Admin/detPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-success">Detail</a>

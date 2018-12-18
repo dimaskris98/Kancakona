@@ -51,7 +51,7 @@
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
             <h1 class="site-heading site-animate mb-3">KANCAKONA KOPI</h1>
-            <p style="color:#f6f6f6"><font size="8" ><b>حب القهو من الإيمان</b></font></br>Hubbul Qahwa Minal Iman</p>    
+            <h5 style="color:#f6f6f6">ngopi <font style="font-size: 6px;vertical-align: middle;">&#9899;</font>  ngaji <font style="font-size: 6px;vertical-align: middle;">&#9899;</font> berbagi</h5>    
             <p><a href="" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Pesan Tempat Sekarang</a></p>
           </div>
         </div>
@@ -389,7 +389,6 @@
             </div>
           </div>
           
-          
           <div class="col-md-4 site-animate">
             <p><iframe src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" style="width:100%;min-height:250px" allowfullscreen></iframe></p>
             <p class="text-black">
@@ -537,7 +536,7 @@
                 <form action="<?php echo base_url('Awal/pesan');?>" method="post" id="reservasiForm"">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_fname">Nama Lengkap <span style="color: red;font-size: 20px">*</span></label>
+                      <label for="m_fname">Nama Lengkap <span style="color: red">*</span></label>
                       <input type="text" class="form-control " id="r_nama" name="nama">
                     </div>
                     <div class="col-md-6 form-group">
@@ -548,16 +547,11 @@
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <label for="jumlah">Jumlah Orang <span style="color: red;font-size: 20px">*</span></label>
-                      <select name="jumlah" id="r_jumlah" class="form-control">
-                        <option value="1">1 Orang</option>
-                        <option value="2">2 Orang</option>
-                        <option value="3">3 Orang</option>
-                        <option value="4">4+ Orang</option>
-                      </select>
+                      <input type="number" class="form-control" id="r_jumlah" name="jumlah" min="1" max="100">
                     </div>
                     <div class="col-md-6 form-group">
                       <label for="r_hp">Nomor Hp <span style="color: red;font-size: 20px">*</span></label>
-                      <input type="text" class="form-control" id="r_hp" name="hp">
+                      <input type="text" class="form-control" id="r_hp" name="hp" value="+62">
                     </div>
                   </div>
 
@@ -571,7 +565,63 @@
                       <input type="text" class="form-control" id="r_waktu" name="waktu">
                     </div>
                   </div>
-
+                  
+                  <div class="row" style="padding: 10px 0px">
+                  	<div class="col-sm-12 form-group">
+                  		<div  style=";height: 3px;background-color: #e6e6e6 !important"></div>
+                  	</div>
+                  </div>
+                  
+                  <div class="row">
+                  	<div class="col-md-12 form-group">
+                  		<label for="menu">Pilih Makanan dan Minuman</label>
+                  		<a href="" target="_blank" data-toggle="modal" data-target="#pilihModal" id="bPilih" class="btn btn-primary btn-lg btn-block">Pilih Makanan</a>
+                  	</div>
+                  </div>
+                  <div class="row">
+                	<div class="col-sm-6">
+                		<label class="full btn btn-primary">Nama Menu</label>
+                	</div>
+                	<div class="col-sm-2">
+                		<label class="full btn btn-primary">Harga</label>
+                	</div>
+                	<div class="col-sm-2">
+                		<label class="full btn btn-primary">Jumlah</label>
+                	</div>
+                	<div class="col-sm-2">
+                		<label class="full btn btn-primary">Total</label>
+                	</div>
+                  </div>
+                  
+                  <div class="row">
+                  	<div class="col-md-12" id="menuKonten">
+                  				
+                  	</div>
+                  </div>
+                  <div class="row">
+                  	<div class="col-md-8 form-group">
+                  		<label>Total Menu</label>
+                  		<input type="text" class="form-control" id="t_menu" disabled="true">
+                  		<input type="hidden" class="form-control" id="hMenu" name="tMenu" value="0">
+                  	</div>
+                  	<div class="col-md-4 form-group">
+                  		<label>Total Harga</label>
+                  		<input type="text" class="form-control" id="t_harga" disabled="true">
+                  		<input type="hidden" class="form-control" id="hHarga" name="tHarga" value="0">
+                  	</div>
+                  </div>
+                  <div class="row" style="padding: 10px 0px">
+                  	<div class="col-sm-12 form-group">
+                  		<div  style=";height: 3px;background-color: #e6e6e6 !important"></div>
+                  	</div>
+                  </div>
+                  
+                  <div class="row">
+                  	<div class="col-md-12 form-group">
+                      <label for="m_message">Acara</label>
+                      <input type="text" class="form-control" id="t_acara" name="acara">
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="m_message">Keterangan Tambahan</label>
@@ -622,6 +672,116 @@
               </div>
             </div>
             
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--MODAL PILIH MAKANAN-->
+    <div class="modal fade" id="pilihModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="max-width: 1200px!important" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+          <form id="formMenu">
+            <div class="row">
+              <div class="col-lg-12">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <small>TUTUP </small><span aria-hidden="true">&times;</span>
+                </button>
+                <h1 class="mb-4">Pilih Menu yang akan ditampilkan</h1>
+              </div>
+              
+              <div class="col-lg-4 mp-5">
+              <div class="row">
+              	<div class="col-sm-12 badge badge-primary center">
+              		<label style="text-align: ">Minuman</label>
+              	</div>
+              </div>
+              	
+              	<div class="row" style="overflow-y: auto; max-height: 300px">
+              	<?php 
+              		foreach($minuman as $row){
+				?>
+					<div class="col-sm-6">
+						<label class=""><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga) ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+              	</div>
+                
+              </div>
+              <div class="col-lg-4 mp-5">
+              	<div class="row">
+              	<div class="col-sm-12 badge badge-primary center">
+              		<label style="text-align: ">Kopi</label>
+              	</div>
+              </div>
+              	<div class="row" style="overflow-y: auto; max-height: 300px">
+              		<?php 
+              		foreach($kopi as $row){
+				?>
+					<div class="col-sm-6">
+						<label><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga) ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+              	</div> 
+              </div>
+              
+              <div class="col-lg-4 mp-5">
+              	<div class="row">
+              	<div class="col-sm-12 badge badge-primary center">
+              		<label>Makanan</label>
+              	</div>
+              </div>
+              	<div class="row" style="overflow-y: auto; max-height: 300px">
+              		<?php 
+              		foreach($makanan as $row){
+				?>
+					<div class="col-sm-6">
+						<label><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga) ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+              	</div>
+              </div>
+              	<input type="hidden" class="form-control" name="password" id="tItems" disabled="true">
+              	<input type="hidden" id="itemsHidden" value="0"/>
+              	<input type="hidden" class="form-control" name="password" id="tHarga" disabled="true">
+              	<input type="hidden" id="hargaHidden" value="0"/>
+              <div class="col-lg-12" style="padding-top:15px ">
+              	<button id="simpanMenu" data-dismiss="modal" class="btn btn-info" style="width: 100%">Simpan</button>
+              </div>
+              
+            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -692,6 +852,88 @@
 
     <script src="<?php echo base_url('assets/js/main.js')?>"></script>
     <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.cMenu').change(function(){
+    			var id = $(this).val(); 
+    			var text = $(this).prev().val();
+    			var harga =  parseInt($(this).next().val());
+    			var jumlah = parseInt($('#hargaHidden').val());
+    			
+    			var tItems = parseInt($('#hMenu').val());
+    			var tHarga = parseInt($('#hHarga').val());
+    			
+    			if(this.checked){
+    			 tItems = tItems+1;
+    			 tHarga = tHarga+harga;
+    			var konten = "<div class='row' id='"+id+"'>"+
+    						"<input type='hidden' name='menu[]' value='"+id+"' />"+
+    						"<label class='col-sm-6'>"+text+"</label>"+
+    						"<label class='col-sm-2'>Rp. "+harga.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")+"</label>"+
+    						"<div class='col-sm-2'>"+
+    						"<input type='hidden' value='"+harga+"' />"+
+    						"<input onchange='return totalHarga(this)' class='full jumlah center' type='number' min='1' max='100' name='jml[]' value='1'/>"+
+    						"<input class='jmlHarga' type='hidden' name='tot[]' value='"+harga+"' /></div>"+
+    						""+
+    						"<div class='col-sm-2'><input class='full center total' value='Rp. "+harga.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")+"' disabled/></div>"+
+    						"</div>";
+    			$('#menuKonten').append(konten);
+    			$('#hMenu').val(tItems);
+    			$('#hHarga').val(tHarga);
+    			
+    			hitungItem();
+    			hitungHarga();
+				}else{
+					
+    			tItems = tItems-($('#'+id).find('.jumlah').val())
+    			tHarga = tHarga-($('#'+id).find('.jmlHarga').val())
+    			$('#'+id).remove();
+    			$('#hMenu').val(tItems);
+    			$('#hHarga').val(tHarga);
+    			
+    			hitungItem();
+    			hitungHarga();
+    			
+				}
+    		})
+    		
+    		$('#simpanMenu').click(function(e){
+    		})
+    	})
+    </script>
+    <script type="text/javascript">
+    	function hitungItem(){
+    		var total=0;
+			 $("#menuKonten .jumlah").each(function(){
+			 	total+=parseInt($(this).val());
+			 })
+			 $('#hMenu').val(total)
+			 $('#t_menu').val(total+" Menu");
+		}
+		
+		function hitungHarga(){
+			var harga = 0;
+			$('#menuKonten .jmlHarga').each(function(){
+				harga += parseInt($(this).val());
+			});
+			$('#hHarga').val(harga);
+			$('#t_harga').val("Rp. "+harga.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."))
+		}
+    
+    	function totalHarga(e){
+    			
+    		
+    			var $parent = $(e).parent();
+				var jml = e.value;
+				var $harga = $(e).prev().val();
+				var $total = $(e).next();
+				var $tTampil = $parent.next().children();
+				
+				$total.val($harga*jml);
+				$tTampil.val('Rp. '+$total.val().toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."));
+				
+				hitungItem();
+				hitungHarga();
+    		}
     	function validateLogin(){
 			if($("#f_user").val() == ""){
 				alert('Mohon isi Username anda !');
@@ -711,7 +953,9 @@
 			var tanggal = $('#r_tanggal');
 			var waktu = $('#r_waktu');
 			var hp = $('#r_hp');
-			//var nama = $('#r_nama');
+			var acara = $('#r_hp');
+			var interval = Date.daysBetween(new Date(),new Date(tanggal.val()));
+			var number = /^[+62]{3}[0-9]{11}/g;
 			
 			if(nama.val() == ""){
 				alert('Isi data terlebih dahulu !');
@@ -721,6 +965,9 @@
 				alert('Isi data terlebih dahulu !');
 				tanggal.focus();
 				return false;
+			}else if(parseInt(interval)<7){
+				alert('Batas pemesanan adalah satu minggu sebelumnya');
+				tanggal.focus();
 			}else if(waktu.val() == ""){
 				alert('Isi data terlebih dahulu !');
 				waktu.focus();
@@ -729,10 +976,37 @@
 				alert('Isi data terlebih dahulu !');
 				hp.focus();
 				return false;
+			}else if(!hp.val().match(number)){
+				alert('Pastikan Nomor HP anda benar');
+				hp.focus();
+				return false;
+			}else if(hp.val().length !=14){
+				alert('Nomor HP haruslah 14 digit');
+				hp.focus();
+				return false;
+			}else if(acara.val() == ""){
+				alert('Isi data terlebih dahulu !');
+				hp.focus();
+				return false;
 			}else{
 				return true;
 			}
-		} 
+		}
+		
+		Date.daysBetween = function( date1, date2 ) {
+		  //Get 1 day in milliseconds
+		  var one_day=1000*60*60*24;
+
+		  // Convert both dates to milliseconds
+		  var date1_ms = date1.getTime();
+		  var date2_ms = date2.getTime();
+
+		  // Calculate the difference in milliseconds
+		  var difference_ms = date2_ms - date1_ms;
+		    
+		  // Convert back to days and return
+		  return Math.round(difference_ms/one_day); 
+		}
     </script>
     <script type="text/javascript">
     	$(document).ready(function(){
@@ -746,15 +1020,15 @@
 		            type: "POST",
 		            data: $(this).serialize(),
 		            success: function (data) {
-		            	if(data=="1"){
+		            	if(data=="9"){
 							alert('Pemesanan Berhasil');
 							$('#reservationModal').modal('toggle');
-						}else if(data == "0"){
+						}else if(data == "8"){
 							alert('Maaf. Kursi Sedang Penuh');
-						}else if(data== '2'){
+						}else if(data== '7'){
 							alert('Maaf, Pemesanan Gagal');
 						}else{
-							alert(data);
+							console.log(data);
 						}
 		            },
 		            error: function (jXHR, textStatus, errorThrown) {
@@ -768,6 +1042,11 @@
 
     </script>
 	<script type="text/javascript">
+	$(document).on('hidden.bs.modal', function (event) {
+  if ($('.modal:visible').length) {
+    $('body').addClass('modal-open');
+  }
+});
 	function tampilEvent(event){
 		$.ajax({
 			type:"GET",

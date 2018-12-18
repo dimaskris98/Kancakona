@@ -1,3 +1,34 @@
+.full {
+	width: 100%
+}
+label.full{
+	font-size: 16px;
+	color: white!important;
+	padding: 0px!important;
+}
+.center{
+	text-align: center;
+}
+.mp-5{
+	padding:25px;
+	padding-top:0px!important;
+}
+.mp-5 .row:first-child{
+	margin-bottom:20px;
+}
+
+#pilihModal label {
+	font-size: 14px
+}
+.hide{
+	visibility: hidden;
+}
+.label-kanan {
+	text-align: left!important;
+}
+.c-kanan{
+	padding: 0px 0px!important;
+}
 .right{
 	right: 0px;
 	left: auto!important;

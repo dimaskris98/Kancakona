@@ -34,7 +34,8 @@ class Awal extends CI_Controller {
 		$data = array('kopi'=>$dKopi,
 					  'minuman'=>$dMinu,
 					  'makanan'=>$dMaka,
-					  'event'=>$dEvent
+					  'event'=>$dEvent,
+					  'html'=>$htmlTag
 					  );
 		$this->load->view('profil',$data);
 	}
@@ -43,14 +44,20 @@ class Awal extends CI_Controller {
 		$nama = $this->input->post('nama');
 		$email = $this->input->post('email');
 		$hp = $this->input->post('hp');
-		$jumlah = $this->input->post('jumlah');
+		$jumlahOrang = $this->input->post('jumlah');
 		$tanggal = $this->input->post('tanggal');
 		$waktu = $this->input->post('waktu');
 		$keterangan = $this->input->post('keterangan');
+		$menuID = $this->input->post('menu');
+		$jmlmenu = $this->input->post('jml');
+		$jmlHarga = $this->input->post('tot');
+		$totalItems = $this->input->post('tMenu');
+		$totalHarga = $this->input->post('tHarga');
+		$acara = $this->input->post('acara');
 		
-		$cek = $this->m_awal->cekTanggal($tanggal,$waktu,$jumlah);
+		$cek = $this->m_awal->cekTanggal($tanggal,$waktu);
 		
-		if($cek){
+		if($cek>0){
 			$data = array(
 						'no_pemesanan'=>'',
 						'tgl_pemesanan'=>$tanggal,
@@ -59,16 +66,16 @@ class Awal extends CI_Controller {
 						'email'=>$email,
 						'no_hp'=>$hp,
 						'keterangan'=>$keterangan,
-						'jumlah'=>$jumlah);
+						'jumlah'=>$jumlahOrang);
 			$cek2 = $this->m_awal->pesanTempat($data);
 			if($cek2){
-				echo '1';
+				echo $cek;
 			}else{
-				echo '2';
+				echo $cek;
 			}
 						
 		}else{
-			echo "0";
+			echo $cek;
 		}
 	}
 	

@@ -28,7 +28,7 @@
       	      </div>
       	    </div>
       	    <div class="span10">
-      	    	<input type="hidden" value="<?php echo $this->uri->segment(3); ?>" name="no_post" />
+      	    	<input type="hidden" value="<?php echo $this->uri->segment(1); ?>" name="no_post" />
       	    	<input type="text" class="form-control" id="jdl" name="judul" value="<?php if(isset($data->judul)){echo $data->judul;}?>"/>
       	    </div>
       	<div class="span2 control-group" style="margin-left: 0px">
