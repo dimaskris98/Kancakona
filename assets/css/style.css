@@ -10,6 +10,7 @@ body {
   color: #828080;
 }
 
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -38,6 +39,7 @@ h1, h2, h3, h4, h5,
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: #darken fafafa, 10% !important;
 }
 .parallax .caption{
 	position: absolute;

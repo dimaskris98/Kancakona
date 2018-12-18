@@ -4,7 +4,6 @@
     <title>Website KANCAKONA KOPI</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>">
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flipcard.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/mystyle.css')?>">
+   
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     
@@ -58,7 +58,6 @@
     </section>
 </div>
     <!-- END section -->
-    
     <section class="site-section" id="section-about">
       <div class="container">
         <div class="row">
