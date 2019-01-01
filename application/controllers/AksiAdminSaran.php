@@ -49,7 +49,12 @@ class AksiAdminSaran extends CI_Controller {
 					alert('Event Berhasil dihapus');
 					location.href='".base_url('Admin/Saran')."'
 				  </script>";
-		} 
+		}else{
+			echo "<script>
+					alert('Hapus Data ERROR');
+					location.href='".base_url('Admin/Saran')."'
+				  </script>";
+		}
 	}
 	
 	public function delmulSaran(){

@@ -30,7 +30,7 @@
                   <td class="satu"><input type="checkbox" name="no_post[]" value="<?php echo $row->no_post ?>" /></td>
                   <td class="dua"><?php echo $row->tanggal;?></td>
                   <td class="tiga"><p><?php echo $row->judul; ?></p></td>
-                  <td class="empat"><p><?php echo htmlentities($row->isi); ?></p></td>
+                  <td class="empat"><p><?php echo str_ireplace($html,"",htmlentities($row->isi)) ; ?></p></td>
                   <td class="lima">
                   	<a  href="<?php echo base_url()."Admin/editEvent/".$row->no_post ?>" class="btn btn-mini btn-info">Edit</a>
                   	<a  href="<?php echo base_url()."AksiAdminEvent/delEvent/".$row->no_post ?>" class="btn btn-mini btn-danger">Hapus</a>

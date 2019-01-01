@@ -3,6 +3,29 @@ class M_aksiadmin extends CI_Model {
 	function __construct() {
 		
 	}
+	//DATA MODEL RESERVASI
+	public function getPemesanan($where){
+		$data = $this->db->get_where('pemesanan',$where);
+		return($data->result());
+	}
+	public function getPemesananRow($where){
+		$data = $this->db->get_where('pemesanan',$where);
+		return($data->row());
+	}
+	public function getPemesanan2(){
+		$data = $this->db->get('pemesanan');
+		return($data->result());
+	}
+	
+	public function ubahTanggal($tgl){
+		
+		$a = date_create($tgl);
+		$b = date_format($a,'d .M Y');
+		$pattern = array(".jan",".feb",".mar",".apr",'.may',".jun",'.jul','.agu','.sep','.okt','.nov','.dec');
+		$replace = array("Januari","Februari","Maret","April",'Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
+		$b = str_ireplace($pattern,$replace,$b);
+		return $b;
+	}
 	//DATA MODEL EVENT
 	public function getEvent(){
 		$data = $this->db->get('event');

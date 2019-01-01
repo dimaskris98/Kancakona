@@ -28,7 +28,7 @@
       	      </div>
       	    </div>
       	    <div class="span10">
-      	    	<input type="hidden" value="<?php echo $this->uri->segment(3); ?>" name="no_post" />
+      	    	<input type="hidden" value="<?php echo $this->uri->segment(1); ?>" name="no_post" />
       	    	<input type="text" class="form-control" id="jdl" name="judul" value="<?php if(isset($data->judul)){echo $data->judul;}?>"/>
       	    </div>
       	<div class="span2 control-group" style="margin-left: 0px">
@@ -73,7 +73,7 @@
   </div>
 </div>
 </div>
-
+<script src="<?php echo base_url('assets/admin/js/wysihtml5-0.3.0.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/jquery.min.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/jquery.ui.custom.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/bootstrap.min.js')?>"></script> 
@@ -84,7 +84,7 @@
 <script src="<?php echo base_url('assets/admin/js/select2.min.js')?>"></script> 
 <script src="<?php echo base_url('assets/admin/js/matrix.form_common.js')?>"></script>
 <script src="<?php echo base_url('assets/admin/js/matrix.js')?>"></script>
-<script src="<?php echo base_url('assets/admin/js/wysihtml5-0.3.0.js')?>"></script> 
+
 <script src="<?php echo base_url('assets/admin/js/jquery.peity.min.js')?>"></script>
 <script src="<?php echo base_url('assets/admin/js/bootstrap-wysihtml5.js')?>"></script>
 
@@ -126,4 +126,7 @@ function readURL(input) {
 $("#imgInp").change(function(){
     readURL(this);
 });
+</script>
+<script type="text/javascript">
+	$('.textarea_editor').wysihtml5();
 </script>

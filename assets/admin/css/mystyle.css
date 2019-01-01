@@ -1,6 +1,93 @@
+.full {
+	width: 100%
+}
+label.full{
+	font-size: 16px;
+	color: white!important;
+	padding: 0px!important;
+}
+.center{
+	text-align: center;
+}
+.mp-5{
+	padding:25px;
+	padding-top:0px!important;
+}
+.mp-5 .row:first-child{
+	margin-bottom:20px;
+}
+
+#pilihModal label {
+	font-size: 14px
+}
+.hide{
+	visibility: hidden;
+}
+.label-kanan {
+	text-align: left!important;
+}
+.c-kanan{
+	padding: 0px 0px!important;
+}
+.right{
+	right: 0px;
+	left: auto!important;
+}
+#content-header .wysihtml5-toolbar li .btn-group{
+	margin-top: 0px;!
+	float: none;
+	right: 0px;
+	position: relative;
+}
+.form-vertical .form-actions {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.pad15{
+	padding-left: 15px;
+	padding-right: 15px;
+	width: auto;
+}
 .table.event {
 	table-layout: fixed;
 }
+.table .r-satu{
+	width: 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+.table .r-dua{
+	width: 10%;
+	vertical-align: middle;
+}
+.table .r-tiga{
+	vertical-align: middle;
+	width: 20%;
+}
+.table .r-tiga p{
+	vertical-align: middle;
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.table .r-empat{
+	width: 40%
+}
+.table .r-empat p{
+	line-height: 1.5em;
+	max-height: 3em;
+	overflow: hidden;
+	margin-bottom: 0px;
+	
+}
+.table .r-lima{
+	width: 125px;
+	text-align: center;
+	vertical-align: middle;
+}
+
 .table .satu{
 	width: 12px;
 	text-align: center;
@@ -122,12 +209,31 @@
 	height: auto;
 	width: auto;
 }
+.text-white{
+	color: #ffffff;
+}
+.item .pad-10{
+	padding: 10px;
+}
 .event-img-div{
 	background-size: cover;
 	text-align: center;
 	width: 100%;
 	height: 200px;
 	overflow: hidden;
+}
+.modalEventText{
+	 margin-right:10px; 
+	 margin-bottom:10px; 
+	 height: 300px;
+	 float: left ;
+	 width: 100%;
+	 background-size: cover;
+	 background-position: center; 
+	 overflow: hidden;
+}
+.cup{
+	box-sizing: content-box;
 }
 .event-deskripsi{
 	line-height: 1.5em;

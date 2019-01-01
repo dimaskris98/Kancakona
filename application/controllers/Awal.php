@@ -26,15 +26,57 @@ class Awal extends CI_Controller {
 	 */
 	public function index()
 	{	
+		$htmlTag = array('&lt;div&gt;','&lt;/div&gt;');
 		$dEvent = $this->m_awal->ambilEvent('event',10);
-		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'),4);
-		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'),4);
-		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'),4);
+		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'));
+		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'));
+		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'));
 		$data = array('kopi'=>$dKopi,
 					  'minuman'=>$dMinu,
 					  'makanan'=>$dMaka,
-					  'event'=>$dEvent);
+					  'event'=>$dEvent,
+					  'html'=>$htmlTag
+					  );
 		$this->load->view('profil',$data);
+	}
+	
+	public function pesan(){
+		$nama = $this->input->post('nama');
+		$email = $this->input->post('email');
+		$hp = $this->input->post('hp');
+		$jumlahOrang = $this->input->post('jumlah');
+		$tanggal = $this->input->post('tanggal');
+		$waktu = $this->input->post('waktu');
+		$keterangan = $this->input->post('keterangan');
+		$menuID = $this->input->post('menu');
+		$jmlmenu = $this->input->post('jml');
+		$jmlHarga = $this->input->post('tot');
+		$totalItems = $this->input->post('tMenu');
+		$totalHarga = $this->input->post('tHarga');
+		$acara = $this->input->post('acara');
+		
+		$cek = $this->m_awal->cekTanggal($tanggal,$waktu);
+		
+		if($cek>0){
+			$data = array(
+						'no_pemesanan'=>'',
+						'tgl_pemesanan'=>$tanggal,
+						'nama'=>$nama,
+						'waktu'=>$waktu,
+						'email'=>$email,
+						'no_hp'=>$hp,
+						'keterangan'=>$keterangan,
+						'jumlah'=>$jumlahOrang);
+			$cek2 = $this->m_awal->pesanTempat($data);
+			if($cek2){
+				echo $cek;
+			}else{
+				echo $cek;
+			}
+						
+		}else{
+			echo $cek;
+		}
 	}
 	
 	public function auth()
@@ -56,7 +98,9 @@ class Awal extends CI_Controller {
 		
 	}
 	
-	public function tampilMenu(){
-		
+	public function tampilEvent(){
+		$id = $this->uri->segment(3);
+		$data = $this->m_awal->ambilMenu('event',array('no_post'=>$id));
+		echo json_encode($data[0]);
 	}
 }
