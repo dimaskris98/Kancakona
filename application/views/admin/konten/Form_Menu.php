@@ -110,9 +110,12 @@
               <label class="control-label">Kategori</label>
               <div class="controls">
                 <select >
-                  <option>Kopi<option>
-                  <option>Makanan</option>
-                  <option>Starter</option>
+                  <option>kopi<option>
+                  <option>makanan</option>
+                  <option>mojito&soda</option>
+                  <option>teh</option>
+                  <option>frappe</option>
+                  <option>camilan</option>
                 </select>
               </div>
             </div>

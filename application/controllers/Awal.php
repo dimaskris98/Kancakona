@@ -29,11 +29,19 @@ class Awal extends CI_Controller {
 		$htmlTag = array('&lt;div&gt;','&lt;/div&gt;');
 		$dEvent = $this->m_awal->ambilEvent('event',10);
 		$dKopi = $this->m_awal->ambilmenu('menu',array('kategori'=>'kopi'));
-		$dMinu = $this->m_awal->ambilmenu('menu',array('kategori'=>'minuman'));
+		$dTeh = $this->m_awal->ambilmenu('menu',array('kategori'=>'teh'));
+		$dMoji = $this->m_awal->ambilmenu('menu',array('kategori'=>'mojito&soda'));
+		$dFrap = $this->m_awal->ambilmenu('menu',array('kategori'=>'frappe'));
+		$dCam = $this->m_awal->ambilmenu('menu',array('kategori'=>'camilan'));
 		$dMaka = $this->m_awal->ambilmenu('menu',array('kategori'=>'makanan'));
+		$dDes = $this->m_awal->ambilmenu('menu',array('deskripsi'));
 		$data = array('kopi'=>$dKopi,
-					  'minuman'=>$dMinu,
+					  'teh'=>$dTeh,
+					  'mojito'=>$dMoji,
+					  'frappe'=>$dFrap,
+					  'camilan'=>$dCam,
 					  'makanan'=>$dMaka,
+					  'deskripsi'=>$dDes,
 					  'event'=>$dEvent,
 					  'html'=>$htmlTag
 					  );

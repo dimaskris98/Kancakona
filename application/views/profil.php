@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Website KANCAKONA KOPI</title>
@@ -45,7 +45,7 @@
       </div>
     </nav>
     <!-- END nav -->
-<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/kk.jpg')?>);">
+<div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/w.png')?>);">
     <section class="site-cover"  id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
@@ -141,10 +141,19 @@
 
             <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab" role="tablist">
               <li class="nav-item site-animate">
-                <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast" role="tab" aria-controls="pills-breakfast" aria-selected="true">Minuman</a>
+                <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast" role="tab" aria-controls="pills-breakfast" aria-selected="true">Kopi</a>
               </li>
               <li class="nav-item site-animate">
-                <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab" aria-controls="pills-lunch" aria-selected="false">Kopi</a>
+                <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab" aria-controls="pills-lunch" aria-selected="false">Teh</a>
+              </li>
+              <li class="nav-item site-animate">
+                <a class="nav-link" id="pills-mojito-tab" data-toggle="pill" href="#pills-mojito" role="tab" aria-controls="pills-teh" aria-selected="false">Mojito & Soda</a>
+              </li>
+              <li class="nav-item site-animate">
+                <a class="nav-link" id="pills-frappe-tab" data-toggle="pill" href="#pills-frappe" role="tab" aria-controls="pills-frappe" aria-selected="false">Frappe</a>
+              </li>
+              <li class="nav-item site-animate">
+                <a class="nav-link" id="pills-camilan-tab" data-toggle="pill" href="#pills-camilan" role="tab" aria-controls="pills-camilan" aria-selected="false">Camilan</a>
               </li>
               <li class="nav-item site-animate">
                 <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-dinner" role="tab" aria-controls="pills-dinner" aria-selected="false">Makanan</a>
@@ -157,7 +166,7 @@
                 <div class="row">
                   
                   <?php $index=0;
-                  	foreach($minuman as $row) { 
+                  	foreach($kopi as $row) { 
                   	if($index%6==0&&$index!=0){
                   		echo '
                   			</div>
@@ -170,7 +179,7 @@
                       <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><?php echo $row->deskripsi; ?></p>
                         <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
                       </div>
                     </div>
@@ -189,7 +198,7 @@
                 	<div class="owl-carousel  owl-two site-owl">
                 	<div class="row">
                   <?php $index = 0;
-                  	foreach($kopi as $row) { 
+                  	foreach($teh as $row) { 
                   	if($index%6==0&&$index!=0){
                   		echo '
                   			</div>
@@ -202,7 +211,94 @@
                       <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><?php echo $row->deskripsi; ?></p>
+                        <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    <?php
+                    $index++; } ?>
+                    </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="pills-mojito" role="tabpanel" aria-labelledby="pills-mojito-tab">
+                
+                	<div class="owl-carousel  owl-two site-owl">
+                	<div class="row">
+                  <?php $index = 0;
+                  	foreach($mojito as $row) { 
+                  	if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+					  }
+                  	?>
+                  		<div class="col-md-6 site-animate">
+                    <div class="media menu-item">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <div class="media-body">
+                        <h5 class="mt-0"><?php echo $row->nama; ?></h5>
+                        <p><?php echo $row->deskripsi; ?></p>
+                        <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    <?php
+                    $index++; } ?>
+                    </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="pills-frappe" role="tabpanel" aria-labelledby="pills-frappe-tab">
+                
+                	<div class="owl-carousel  owl-two site-owl">
+                	<div class="row">
+                  <?php $index = 0;
+                  	foreach($frappe as $row) { 
+                  	if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+					  }
+                  	?>
+                  		<div class="col-md-6 site-animate">
+                    <div class="media menu-item">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <div class="media-body">
+                        <h5 class="mt-0"><?php echo $row->nama; ?></h5>
+                        <p><?php echo $row->deskripsi; ?></p>
+                        <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    <?php
+                    $index++; } ?>
+                    </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="pills-camilan" role="tabpanel" aria-labelledby="pills-camilan-tab">
+                
+                	<div class="owl-carousel  owl-two site-owl">
+                	<div class="row">
+                  <?php $index = 0;
+                  	foreach($camilan as $row) { 
+                  	if($index%6==0&&$index!=0){
+                  		echo '
+                  			</div>
+                  			<div class="row">
+                  			';
+					  }
+                  	?>
+                  		<div class="col-md-6 site-animate">
+                    <div class="media menu-item">
+                      <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
+                      <div class="media-body">
+                        <h5 class="mt-0"><?php echo $row->nama; ?></h5>
+                        <p><?php echo $row->deskripsi; ?></p>
                         <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
                       </div>
                     </div>
@@ -231,7 +327,7 @@
                       <img class="mr-3" src="<?php echo base_url('assets/images/logokakon.png')?>" class="img-fluid" alt="Free Template by colorlib.com">
                       <div class="media-body">
                         <h5 class="mt-0"><?php echo $row->nama; ?></h5>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><?php echo $row->deskripsi; ?></p>
                         <h6 class="text-primary menu-price">Rp. <?php echo number_format($row->harga) ?></h6>
                       </div>
                     </div>
@@ -325,13 +421,13 @@
       </div>
     </section>-->
     <!-- END section -->
-
+    <div class="parallax"   style="background-image: url(<?php echo base_url('assets/images/w.png')?>);">
     <section class="site-section" id="section-gallery">
       <div class="container">
         <div class="row site-custom-gutters">
 
           <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4">Galeri</h2>
+            <h2 class="display-4 text-white">Galeri</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
               
@@ -374,6 +470,7 @@
         </div>
       </div>
     </section>
+    </div>
     <!-- END section -->
 
     <section class="site-section bg-light" id="section-contact">
@@ -394,7 +491,7 @@
             <p class="text-black">
               Alamat: <br> Jalan Basuki Rahmat No. 230 <br> Tegal Besar, Jember <br> <br>
               Telepon: <br> 081336641191 <br> <br>
-              Email: <br> <a href="mailto:kancakonakopijember@gmail.com">kancakonakopijember@gmail.com</a>
+              Email: <br> <a href="mailto:kancakonakopiiaajember@gmail.com">kancakonakopijember@gmail.com</a>
             </p>
           </div>
           <div class="col-md-1"></div>
