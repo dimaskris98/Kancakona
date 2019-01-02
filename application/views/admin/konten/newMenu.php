@@ -24,9 +24,14 @@
               <label class="control-label">Kategori</label>
               <div class="controls">
                 <select name="kategori" >
-                  <option value="kopi" <?php if(isset($data)){ if($data->kategori == "kopi"){echo "selected";}} ?>>Kopi</option>
-                  <option value="minuman" <?php if(isset($data)){ if($data->kategori == "minuman"){echo "selected";}} ?>>Minuman</option>
-                  <option value="makanan" <?php if(isset($data)){ if($data->kategori == "makanan"){echo "selected";}} ?>>Makanan</option>
+                  <option value="kopi" <?php if(isset($data)){ if($data->kategori == "kopi"){echo "selected";}} ?>>kopi</option>
+                  <option value="makanan" <?php if(isset($data)){ if($data->kategori == "makanan"){echo "selected";}} ?>>makanan</option>
+                  <option value="mojito&soda" <?php if(isset($data)){ if($data->kategori == "mojito&soda"){echo "selected";}} ?>>mojito&soda</option>
+                  <option value="teh" <?php if(isset($data)){ if($data->kategori == "teh"){echo "selected";}} ?>>teh</option>
+                  <option value="frappe" <?php if(isset($data)){ if($data->kategori == "frappe"){echo "selected";}} ?>>frappe</option>
+                  <option value="camilan" <?php if(isset($data)){ if($data->kategori == "camilan"){echo "selected";}} ?>>camilan</option>
+                  
+                  
                 </select>
               </div>
             </div>

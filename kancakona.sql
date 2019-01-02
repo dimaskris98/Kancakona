@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2018 at 05:46 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.0.32
+-- Generation Time: 01 Jan 2019 pada 08.08
+-- Versi Server: 10.1.16-MariaDB
+-- PHP Version: 7.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -25,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `event`
+-- Struktur dari tabel `event`
 --
 
 CREATE TABLE `event` (
@@ -37,7 +35,7 @@ CREATE TABLE `event` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `event`
+-- Dumping data untuk tabel `event`
 --
 
 INSERT INTO `event` (`no_post`, `tanggal`, `judul`, `nama_gambar`, `isi`) VALUES
@@ -49,7 +47,7 @@ INSERT INTO `event` (`no_post`, `tanggal`, `judul`, `nama_gambar`, `isi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `meja`
+-- Struktur dari tabel `meja`
 --
 
 CREATE TABLE `meja` (
@@ -59,7 +57,7 @@ CREATE TABLE `meja` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `meja`
+-- Dumping data untuk tabel `meja`
 --
 
 INSERT INTO `meja` (`no_meja`, `jenis_meja`, `kapasitas`) VALUES
@@ -69,54 +67,100 @@ INSERT INTO `meja` (`no_meja`, `jenis_meja`, `kapasitas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu`
+-- Struktur dari tabel `menu`
 --
 
 CREATE TABLE `menu` (
   `no_menu` int(11) NOT NULL,
   `nama` varchar(100) NOT NULL,
-  `kategori` set('makanan','minuman','kopi','') NOT NULL,
+  `kategori` set('mojito&soda','teh','kopi','frappe','camilan','makanan') NOT NULL,
   `harga` int(11) DEFAULT NULL,
   `deskripsi` text NOT NULL,
   `nama_gambar` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `menu`
+-- Dumping data untuk tabel `menu`
 --
 
 INSERT INTO `menu` (`no_menu`, `nama`, `kategori`, `harga`, `deskripsi`, `nama_gambar`) VALUES
-(1, 'Robusta Raung', 'kopi', 8000, '', ''),
-(2, 'Robusta Ijen', 'kopi', 9000, '', ''),
-(3, 'Robusta Sidomulyo', 'kopi', 8000, '', ''),
-(4, ' Arabica Ijen (Fullwash)', 'kopi', 12000, '', ''),
-(5, 'Arabica Ijen (Honey Proccess)', 'kopi', 15000, '', ''),
-(6, 'Arabica Ijen (Natural)', 'kopi', 18000, '', ''),
-(7, 'Bali Kintamani', 'kopi', 15000, '', ''),
-(8, 'Aceh Gayo', 'kopi', 15000, '', ''),
-(9, 'Mandailing', 'kopi', 15000, '', ''),
-(10, 'Lintong Blue Batak', 'kopi', 15000, '', ''),
-(11, 'Halu Pink Banana', 'kopi', 35000, '', ''),
-(12, 'Halu Choco Banana', 'kopi', 35000, '', ''),
-(13, 'Jus Melon', 'minuman', 10000, '', ''),
-(14, 'Jus Semangka', 'minuman', 10000, '', ''),
-(15, 'Jus Apel', 'minuman', 100000, '', ''),
-(16, 'Jus Alpukat', 'minuman', 12000, '', ''),
-(17, 'Cappucino', 'kopi', 18000, '', ''),
-(18, 'Cafe Latte', 'kopi', 18000, '', ''),
-(19, 'Vanilla Latte', 'kopi', 18000, '', ''),
-(20, 'Greentea Latte', 'minuman', 15000, '', ''),
-(21, 'Taro Blend', 'minuman', 15000, '', ''),
-(22, 'Chocolate latte', 'minuman', 15000, '', ''),
-(23, 'siomay', 'makanan', 10000, '', ''),
-(24, 'Nasi Goreng', 'makanan', 15000, '', ''),
-(25, 'French Fries', 'makanan', 10000, '', ''),
-(26, 'Potato Wedges', '', 10000, '', '');
+(31, 'Kopi Tubruk', 'kopi', 5000, ' ', ''),
+(32, 'All Single Origin', 'kopi', 18000, ' Javanesse Kopi, V60, Aeropress, Frenchpress, Syphon, Mokapot', ''),
+(33, 'Limited Coffee', 'kopi', 35000, ' Varian Kopi Halu Pink Banana, Gayo Wine, Java Blue Mountain, Luwak yang diseduh dengan Syphon dan Cold Drip ', ''),
+(34, 'Single Origin Cold Drip', 'kopi', 25000, '   ', ''),
+(35, 'Single Origin Cold Brew', 'kopi', 18000, ' ', ''),
+(36, 'Kopi Maljum', 'kopi', 25000, ' Hanya tersedia pada malam Jum''at', ''),
+(37, 'Kopi Maljum Istimewa', 'kopi', 30000, 'Hanya tersedia pada malam Jum''at', ''),
+(38, 'Hakikat Kopi', 'kopi', 12000, '  One Shot Espresso', ''),
+(39, 'Tarekat Kopi', 'kopi', 20000, '  Double shot espresso (Doppio)', ''),
+(40, 'Syariat Kopi', 'kopi', 20000, '  One shot espresso + tubruk', ''),
+(41, 'Coffee Latte', 'kopi', 15000, '  Espresso + Steamed Milk', ''),
+(42, 'Long Black', 'kopi', 15000, '  Hot water + Espresso', ''),
+(43, 'Affogato', 'kopi', 25000, ' Ice cream + Espresso', ''),
+(44, 'Kopi Tetes Original', 'kopi', 18000, ' ', ''),
+(45, 'Kopi Tetes Susu', 'kopi', 20000, ' ', ''),
+(46, 'Kopi Tetes Madu', 'kopi', 20000, ' ', ''),
+(47, 'Kopi Tetes Durian', 'kopi', 20000, ' ', ''),
+(48, 'Kopi Tetes Alpukat', 'kopi', 20000, ' ', ''),
+(49, 'White Tea', 'teh', 15000, ' ', ''),
+(50, 'Green Tea', 'teh', 15000, ' ', ''),
+(51, 'Black Tea', 'teh', 15000, ' ', ''),
+(52, 'Cascara', 'teh', 15000, ' Teh dari Kopi', ''),
+(53, 'Lychee Tea', 'teh', 15000, ' ', ''),
+(54, 'Green Tea Latte', 'teh', 15000, ' ', ''),
+(55, 'Lemon Tea', 'teh', 15000, ' ', ''),
+(56, 'Teh Tarik', 'teh', 15000, ' ', ''),
+(57, 'Mojito', 'mojito&soda', 15000, ' ', ''),
+(58, 'Limon', 'mojito&soda', 8000, ' Jeruk, Lemon Lime, Aardbeien, Temulawak, Coffee Cola', ''),
+(59, 'Lady in Red', 'mojito&soda', 15000, ' ', ''),
+(60, 'Cola Pop', 'mojito&soda', 13000, ' ', ''),
+(61, 'Fanta Pop', 'mojito&soda', 13000, ' ', ''),
+(62, 'Es Timun', 'mojito&soda', 15000, ' ', ''),
+(63, 'Pinacolada', 'mojito&soda', 15000, ' ', ''),
+(64, 'Mango Bomba', 'mojito&soda', 15000, ' ', ''),
+(65, 'Nano Nano Sparkling', 'mojito&soda', 15000, ' ', ''),
+(66, 'Soda Gembira', 'mojito&soda', 13000, ' ', ''),
+(67, 'Green Tea Frappe', 'frappe', 15000, ' ', ''),
+(68, 'Bubble Gum Frappe', 'frappe', 15000, ' ', ''),
+(69, 'Chocolate Frappe', 'frappe', 15000, ' ', ''),
+(70, 'Strawberry Frappe', 'frappe', 15000, ' ', ''),
+(71, 'Milo Frappe', 'frappe', 15000, ' ', ''),
+(72, 'Vanilla Milkshake', 'frappe', 15000, ' ', ''),
+(73, 'Banana Yoghurt', 'frappe', 15000, ' ', ''),
+(74, 'Chocolate Cookies', 'frappe', 15000, ' ', ''),
+(75, 'Cincau Soya', 'frappe', 15000, ' ', ''),
+(76, 'Cendol Soya', 'frappe', 15000, ' ', ''),
+(77, 'Roti Bakar Mentega', 'camilan', 10000, ' ', ''),
+(78, 'Roti Bakar Keju', 'camilan', 12000, ' ', ''),
+(79, 'Roti Bakar Cokelat', 'camilan', 12000, ' ', ''),
+(80, 'Roti Bakar Kopi', 'camilan', 20000, ' ', ''),
+(81, 'Roti Bakar Mata Sapi', 'camilan', 15000, ' ', ''),
+(82, 'Jamur Goreng Original', 'camilan', 10000, ' ', ''),
+(83, 'Jamur Goreng Keju', 'camilan', 12000, ' ', ''),
+(84, 'Jamur Goreng Kopi', 'camilan', 15000, ' ', ''),
+(85, 'Tape Bakar Kopi ', 'camilan', 15000, ' ', ''),
+(86, 'Tape Bakar Keju', 'camilan', 12000, ' ', ''),
+(87, 'Pisang Bakar Kopi', 'camilan', 15000, ' ', ''),
+(88, 'Pisang Bakar Keju', 'camilan', 12000, ' ', ''),
+(89, 'Bakdabak Khas Sumenep', 'camilan', 15000, ' ', ''),
+(90, 'Singkong Goreng', 'camilan', 10000, ' ', ''),
+(91, 'Kaldu Kikil Khas Sumenep', 'makanan', 35000, ' ', ''),
+(92, 'Nasi Jagung Kuah Pindang', 'makanan', 15000, ' ', ''),
+(93, 'Nasi Goreng Santri', 'makanan', 10000, ' ', ''),
+(94, 'Nasi Goreng Petani', 'makanan', 15000, ' ', ''),
+(95, 'Nasi Goreng Nelayan', 'makanan', 20000, ' ', ''),
+(96, 'Nasi Goreng Kiai', 'makanan', 30000, ' ', ''),
+(97, 'Nasi Santri', 'makanan', 10000, '(Nasi Jagung, Teri, Sambal, Bayam atau Kelor)', ''),
+(98, 'Mie Sehat + Telur', 'makanan', 20000, ' ', ''),
+(99, 'Nasi Gulung Telur', 'makanan', 20000, ' ', ''),
+(100, 'Mie Gulung Telur', 'makanan', 18000, ' ', ''),
+(101, 'Roti John Kancakona', 'makanan', 45000, ' ', ''),
+(102, 'Steak Tempe Mozarella', 'makanan', 17000, ' ', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pemesanan`
+-- Struktur dari tabel `pemesanan`
 --
 
 CREATE TABLE `pemesanan` (
@@ -131,7 +175,7 @@ CREATE TABLE `pemesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pemesanan`
+-- Dumping data untuk tabel `pemesanan`
 --
 
 INSERT INTO `pemesanan` (`no_pemesanan`, `tgl_pemesanan`, `nama`, `waktu`, `email`, `no_hp`, `keterangan`, `jumlah`) VALUES
@@ -140,7 +184,7 @@ INSERT INTO `pemesanan` (`no_pemesanan`, `tgl_pemesanan`, `nama`, `waktu`, `emai
 -- --------------------------------------------------------
 
 --
--- Table structure for table `saran`
+-- Struktur dari tabel `saran`
 --
 
 CREATE TABLE `saran` (
@@ -153,7 +197,7 @@ CREATE TABLE `saran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `saran`
+-- Dumping data untuk tabel `saran`
 --
 
 INSERT INTO `saran` (`no_saran`, `tanggal`, `nama`, `email`, `nomer`, `saran`) VALUES
@@ -163,7 +207,7 @@ INSERT INTO `saran` (`no_saran`, `tanggal`, `nama`, `email`, `nomer`, `saran`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -174,7 +218,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`Nama`, `Username`, `Password`, `Alamat`) VALUES
@@ -229,32 +273,26 @@ ALTER TABLE `user`
 --
 ALTER TABLE `event`
   MODIFY `no_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT for table `meja`
 --
 ALTER TABLE `meja`
   MODIFY `no_meja` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `no_menu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-
+  MODIFY `no_menu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 --
 -- AUTO_INCREMENT for table `pemesanan`
 --
 ALTER TABLE `pemesanan`
   MODIFY `no_pemesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `saran`
 --
 ALTER TABLE `saran`
   MODIFY `no_saran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
