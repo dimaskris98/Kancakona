@@ -390,7 +390,7 @@
           </div>
           
           <div class="col-md-4 site-animate">
-            <p><iframe src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" style="width:100%;min-height:250px" allowfullscreen></iframe></p>
+            <p><iframe src="https://www.youtube.com/embed/Jljp3y9KBt8" frameborder="0" style="width:100%;min-height:250px"></iframe></p>
             <p class="text-black">
               Alamat: <br> Jalan Basuki Rahmat No. 230 <br> Tegal Besar, Jember <br> <br>
               Telepon: <br> 081336641191 <br> <br>
@@ -422,7 +422,7 @@
         </div>
       </div>
     </section>
-    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.856413307632!2d113.6962672!3d-8.2063644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cb6c0670a70591!2sKanca+Kona+Kopi!5e0!3m2!1sid!2sid!4v1543729686761" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.856413307632!2d113.6962672!3d-8.2063644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cb6c0670a70591!2sKanca+Kona+Kopi!5e0!3m2!1sid!2sid!4v1543729686761" width="100%" height="400" frameborder="0" style="border:0"></iframe></div>
     <!-- END section -->
     
 
@@ -562,7 +562,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                       <label for="m_time">Waktu <span style="color: red;font-size: 20px">*</span></label>
-                      <input type="text" class="form-control" id="r_waktu" name="waktu">
+                      <input type="text" class="form-control" id="r_waktu" name="waktu" maxlength="6" min="6">
                     </div>
                   </div>
                   
@@ -600,12 +600,12 @@
                   </div>
                   <div class="row">
                   	<div class="col-md-8 form-group">
-                  		<label>Total Menu</label>
+                  		<label class="full btn btn-primary">Total Menu</label>
                   		<input type="text" class="form-control" id="t_menu" disabled="true">
                   		<input type="hidden" class="form-control" id="hMenu" name="tMenu" value="0">
                   	</div>
                   	<div class="col-md-4 form-group">
-                  		<label>Total Harga</label>
+                  		<label class="full btn btn-primary">Total Harga</label>
                   		<input type="text" class="form-control" id="t_harga" disabled="true">
                   		<input type="hidden" class="form-control" id="hHarga" name="tHarga" value="0">
                   	</div>
@@ -619,7 +619,7 @@
                   <div class="row">
                   	<div class="col-md-12 form-group">
                       <label for="m_message">Acara</label>
-                      <input type="text" class="form-control" id="t_acara" name="acara">
+                      <input type="text" class="form-control" id="r_acara" name="acara">
                     </div>
                   </div>
                   <div class="row">
@@ -683,7 +683,7 @@
         <div class="modal-content">
           <div class="modal-body">
           <form id="formMenu">
-            <div class="row">
+            <div class="row centang">
               <div class="col-lg-12">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <small>TUTUP </small><span aria-hidden="true">&times;</span>
@@ -706,7 +706,7 @@
 						<label class=""><?php echo $row->nama ?></label>
 					</div>
 					<div class="col-sm-4" style="text-align: right">
-						<label>Rp. <?php echo number_format($row->harga) ?></label>
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
 					</div>
 					<div class="col-sm-1">
 						<input type="hidden" value="<?php echo $row->nama ;?>"/>
@@ -733,7 +733,7 @@
 						<label><?php echo $row->nama ?></label>
 					</div>
 					<div class="col-sm-4" style="text-align: right">
-						<label>Rp. <?php echo number_format($row->harga) ?></label>
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
 					</div>
 					<div class="col-sm-1">
 						<input type="hidden" value="<?php echo $row->nama ;?>"/>
@@ -760,7 +760,7 @@
 						<label><?php echo $row->nama ?></label>
 					</div>
 					<div class="col-sm-4" style="text-align: right">
-						<label>Rp. <?php echo number_format($row->harga) ?></label>
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
 					</div>
 					<div class="col-sm-1">
 						<input type="hidden" value="<?php echo $row->nama ;?>"/>
@@ -772,10 +772,6 @@
 				?>
               	</div>
               </div>
-              	<input type="hidden" class="form-control" name="password" id="tItems" disabled="true">
-              	<input type="hidden" id="itemsHidden" value="0"/>
-              	<input type="hidden" class="form-control" name="password" id="tHarga" disabled="true">
-              	<input type="hidden" id="hargaHidden" value="0"/>
               <div class="col-lg-12" style="padding-top:15px ">
               	<button id="simpanMenu" data-dismiss="modal" class="btn btn-info" style="width: 100%">Simpan</button>
               </div>
@@ -953,7 +949,8 @@
 			var tanggal = $('#r_tanggal');
 			var waktu = $('#r_waktu');
 			var hp = $('#r_hp');
-			var acara = $('#r_hp');
+			var item = $('#hMenu');
+			var acara = $('#r_acara');
 			var interval = Date.daysBetween(new Date(),new Date(tanggal.val()));
 			var number = /^[+62]{3}[0-9]{11}/g;
 			
@@ -971,6 +968,10 @@
 			}else if(waktu.val() == ""){
 				alert('Isi data terlebih dahulu !');
 				waktu.focus();
+				return false;
+			}else if(item.val() == '0'){
+				alert('Pilih Menu Makanan anda minimal 1');
+				$('#bPilih').focus();
 				return false;
 			}else if(hp.val() == ""){
 				alert('Isi data terlebih dahulu !');
@@ -1020,12 +1021,13 @@
 		            type: "POST",
 		            data: $(this).serialize(),
 		            success: function (data) {
-		            	if(data=="9"){
+		            	if(data=="2"){
 							alert('Pemesanan Berhasil');
 							$('#reservationModal').modal('toggle');
-						}else if(data == "8"){
+							clearInput();
+						}else if(data == "0"){
 							alert('Maaf. Kursi Sedang Penuh');
-						}else if(data== '7'){
+						}else if(data== '1'){
 							alert('Maaf, Pemesanan Gagal');
 						}else{
 							console.log(data);
@@ -1039,6 +1041,23 @@
 				} 
 		    });
 		});
+		
+		function clearInput(){
+			$('#r_nama').val('');
+			$('#r_email').val('');
+			$('#r_jumlah').val('');
+			$('#r_tanggal').val('');
+			$('#r_waktu').val('');
+			$('#r_hp').val('');
+			$('#menuKonten').empty();
+			$('#t_menu').val('');
+			$('#hMenu').val('');
+			$('#t_harga').val('');
+			$('#hHarga').val('');
+			$('#r_acara').val('');
+			$('#r_keterangan').val('');
+			$('.cMenu').prop('checked',false);
+		}
 
     </script>
 	<script type="text/javascript">

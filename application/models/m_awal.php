@@ -11,21 +11,25 @@ class M_awal extends CI_Model {
 		return($data->result());
 	}
 	
-	function cekTanggal($tgl, $waktu){
+	function cekTanggal($tgl, $waktu, $jumlah){
 		$this->db->select('SUM(jumlah) as total');
 		$this->db->where("tgl_pemesanan = '$tgl' AND waktu = '$waktu'");
 		$this->db->from('pemesanan');
 		$total = $this->db->get()->row();
 		
-		if($total->total<1){
-			return $total->total;
+		if((100-$total->total)>$jumlah){
+			return TRUE;
 		}else{
-			return $total->total;
+			return FALSE;
 		}
 	}
 	
 	function pesanTempat($data){
 		$sql = $this->db->insert('pemesanan',$data);
+		return $sql;
+	}
+	function pesanDetail($data){
+		$sql = $this->db->insert('detail_pemesanan',$data);
 		return $sql;
 	}
 		

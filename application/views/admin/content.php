@@ -11,8 +11,13 @@ $link = $this->uri->segment(2);
     <?php
     if($link=="Event"){
 		echo '<a href="'.base_url('Admin/Event').'" title="Kembali ke Acara" class="tip-bottom"> Acara</a>';
+	}elseif($link=="Reservasi"){
+		echo '<a href="'.base_url('Admin/Reservasi').'" title="Kembali ke Pesan Tempat" class="tip-bottom"> Pesan Tempat</a>';
 	}elseif($link=="Menu"){
 		echo '<a href="'.base_url('Admin/Menu').'" title="Kembali ke Menu" class="tip-bottom"> Menu</a>';
+	}elseif($link=="detPemesanan"){
+		echo '<a href="'.base_url('Admin/Reservasi').'" title="Kembali ke Pesan Tempat" class="tip-bottom"> Pesan Tempat</a>';
+		echo '<a href="'.base_url('Admin/detPemesanan').'" title="Kembali ke Detail Pemesanan" class="tip-bottom"> Detail Pemesanan</a>';
 	}elseif($link=="newEvent"){
 		echo '<a href="'.base_url('Admin/Event').'" title="Kembali ke Acara" class="tip-bottom"> Acara</a>';
 		echo '<a href="'.base_url('Admin/newEvent').'" title="Kembali ke Acara Baru" class="tip-bottom"> Acara Baru</a>';

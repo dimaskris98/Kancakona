@@ -167,7 +167,12 @@ class AksiAdminMenu extends CI_Controller {
 					alert('Menu Berhasil dihapus');
 					location.href='".base_url('Admin/Menu')."'
 				  </script>";
-		} 
+		}else{
+			echo "<script>
+					alert('Hapus Gagal');
+					location.href='".base_url('Admin/Menu')."'
+				  </script>";
+		}
 	}
 	
 	public function delmulMenu(){

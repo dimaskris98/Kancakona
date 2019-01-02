@@ -48,16 +48,19 @@ class Awal extends CI_Controller {
 		$tanggal = $this->input->post('tanggal');
 		$waktu = $this->input->post('waktu');
 		$keterangan = $this->input->post('keterangan');
-		$menuID = $this->input->post('menu');
-		$jmlmenu = $this->input->post('jml');
-		$jmlHarga = $this->input->post('tot');
 		$totalItems = $this->input->post('tMenu');
 		$totalHarga = $this->input->post('tHarga');
 		$acara = $this->input->post('acara');
 		
-		$cek = $this->m_awal->cekTanggal($tanggal,$waktu);
+		$menuID = $this->input->post('menu');
+		$jmlmenu = $this->input->post('jml');
+		$jmlHarga = $this->input->post('tot');
 		
-		if($cek>0){
+		$cek = $this->m_awal->cekTanggal($tanggal,$waktu,$jumlahOrang);
+		$error = 'a';
+		
+		if($cek){
+			
 			$data = array(
 						'no_pemesanan'=>'',
 						'tgl_pemesanan'=>$tanggal,
@@ -65,30 +68,54 @@ class Awal extends CI_Controller {
 						'waktu'=>$waktu,
 						'email'=>$email,
 						'no_hp'=>$hp,
+						'acara'=>$acara,
 						'keterangan'=>$keterangan,
+						'total_menu'=>$totalItems,
+						'total_harga'=>$totalHarga,
 						'jumlah'=>$jumlahOrang);
+						
 			$cek2 = $this->m_awal->pesanTempat($data);
 			if($cek2){
-				echo $cek;
+				$noPemesanan = $this->db->insert_id();
+				$index = 0;
+				
+				foreach($menuID as $id){
+					$data = array(
+								'no_detail'=>'',
+								'no_pemesanan'=>$noPemesanan,
+								'no_menu'=>$id,
+								'jumlah_item'=>$jmlmenu[$index],
+								'jumlah_harga'=>$jmlHarga[$index]);
+								
+					$cek3 = $this->m_awal->pesanDetail($data);
+					
+					if(!$cek3){
+						$error += $this->db->error(); 
+					}
+					$index++;
+				}
+				
+				echo '2';
 			}else{
-				echo $cek;
+				$error += $this->db->error();
+				echo $error;
 			}
 						
 		}else{
-			echo $cek;
+			echo '0';
 		}
 	}
 	
 	public function auth()
 	{
 		$username = $this->input->post('username');
-		$password = $this->input->post('password');
+		$password = md5($this->input->post('password'));
 		$where = array(
-					'Username' => $username,
-					'Password' => $password
+					'username' => $username,
+					'password' => $password
 					);
 		
-		$cek = $this->m_login->cek_login('user',$where)->num_rows();
+		$cek = $this->m_login->cek_login('pengaturan',$where)->num_rows();
 		if($cek){
 			$this->session->set_userdata('admin',$username);
 			redirect("Admin");

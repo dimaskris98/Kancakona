@@ -10,7 +10,7 @@
       		<h5>Filter Data</h5>
       	</div>
       	<div class="widget-content nopadding">
-      		<form class="form-vertical" action="<?php echo base_url('Admin/reservasi');  ?>" id="basic_validate" name="basic_validate" novalidate="novalidate" method="get">
+      		<form class="form-vertical" action="<?php echo base_url('Admin/reservasi');  ?>" method="get">
       			<div class="row-fluid pad15">
       			<div class="span4 control-group">
       				<label class="control-label">Tanggal :</label>
@@ -19,27 +19,48 @@
       				</div>
       			</div>
       			<div class="span4 control-group">
-      				<label class="control-label">Waktu :</label>
+      				<label class="control-label">Bulan :</label>
       				<div class="controls">
-      					<input type="text" class="span12" name="waktu" id="waktu" placeholder="Waktu..."/>
+      					<select class="span12" name="bulan" >
+      						<option>--Pilih Bulan--</option>
+      						<option value="1">Januari</option>
+      						<option value="2">Februari</option>
+      						<option value="3">Maret</option>
+      						<option value="4">April</option>
+      						<option value="5">Mei</option>
+      						<option value="6">Juni</option>
+      						<option value="7">Juli</option>
+      						<option value="8">Agustus</option>
+      						<option value="9">September</option>
+      						<option value="10">Oktober</option>
+      						<option value="11">November</option>
+      						<option value="12">Desember</option>
+      					</select>
       				</div>
       			</div>
       			<div class="span4 control-group">
-      				<label class="control-label">Jumlah Orang :</label>
+      				<label class="control-label">Tahun :</label>
       				<div class="controls">
-      					<select name="jumlah" id="jumlah" class="span12">
-                        <option value="1">1 Orang</option>
-                        <option value="2">2 Orang</option>
-                        <option value="3">3 Orang</option>
-                        <option value="4">4+ Orang</option>
-                      </select>
+      					<select class="span12" name="tahun" >
+      					<option>--Pilih Tahun--</option>
+      						<?php 
+      							$start = 2018;
+      							$now = date('Y')+1;
+      						    $range = $now-$start;
+      						    for($i = 0; $i <= $range ; $i++){
+								  	echo "<option value='$start'>$start</option>";
+								  	$start++;
+								  }
+      						    
+      						?>
+      					</select>
       				</div>
       			</div>
       			
       		</div>
       		
       			<div class="form-actions">
-      		<a type="submit" class="btn btn-warning" href="<?php echo base_url('Admin/reservasi'); ?>">Reset</a>
+      		<a class="btn btn-warning" href="<?php echo base_url('Admin/reservasi'); ?>">Reset</a>
       		<button type="submit" name="cari" class="btn btn-primary">Cari</button>
       		</div>
       		
@@ -83,7 +104,6 @@
                   <td class="r-empat"><p><?php echo $row->keterangan; ?></p></td>
                   <td class="r-lima">
                   	<a  href="<?php echo base_url()."Admin/detPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-success">Detail</a>
-                  	<a  href="<?php echo base_url()."Admin/editPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-info">Edit</a>
                   	<a  href="<?php echo base_url()."AksiAdminPemesanan/delPemesanan/".$row->no_pemesanan ?>" class="btn btn-mini btn-danger">Hapus</a>
                   </td>
                 </tr>
@@ -116,7 +136,7 @@
 <script type="text/javascript">
 	$('#waktu').timepicker();
 	  $('#tanggal').datepicker({
-	  'format': 'm/d/yyyy',
+	  'format': 'd/m/yyyy',
 	  'autoclose': true
 	});
 </script>

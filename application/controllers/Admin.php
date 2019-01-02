@@ -31,12 +31,12 @@ class Admin extends CI_Controller {
 	}
 	//PEMESANAN CONTROLLER
 	public function reservasi(){
-		if(null !== $this->input->get('tanggal')){
+		if(null !== $this->input->get('cari')){
 			$tanggal = $this->input->get('tanggal');
-			$waktu = $this->input->get('waktu');
-			$jumlah = $this->input->get('jumlah');
+			$bulan = $this->input->get('bulan');
+			$tahun = $this->input->get('tahun');
 			
-			$where = "tgl_pemesanan = '$tanggal' OR waktu = '$waktu' OR jumlah = $jumlah";
+			$where = "tgl_pemesanan = '$tanggal' OR tgl_pemesanan LIKE '%/$bulan/%' OR tgl_pemesanan LIKE '%/$tahun'";
 			$data = $this->M_aksiadmin->getPemesanan($where);
 			$this->load->view('admin/konten/reservasi',$var = array('data' =>$data));
 			$this->load->view('admin/footer');
@@ -53,10 +53,10 @@ class Admin extends CI_Controller {
 	public function detPemesanan(){
 		$id = $this->uri->segment(3);
 		$data = $this->M_aksiadmin->getPemesananRow(array('no_pemesanan'=>$id));
-		
+		$detail = $this->M_aksiadmin->getDetail(array('no_pemesanan'=>$id));
 		$tanggal = $this->M_aksiadmin->ubahTanggal($data->tgl_pemesanan);
 			
-		$this->load->view('admin/konten/detPemesanan',$var = array('data'=>$data,'tgl'=>$tanggal));
+		$this->load->view('admin/konten/detPemesanan',$var = array('data'=>$data,'tgl'=>$tanggal,'detail'=>$detail));
 		$this->load->view('admin/footer');
 	}
 	
@@ -104,6 +104,14 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/footer');
 	}
 	
+	//PENGATURAN CONTROLLER
+	
+	public function pengaturan(){
+		$data = $this->M_aksiadmin->getPengaturan();
+		$this->load->view('admin/konten/pengaturan', array('data'=>$data));
+		$this->load->view('admin/footer');
+	}
+	
 	
 	
 	
@@ -113,6 +121,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/konten/saran', array('data'=>$data));
 		$this->load->view('admin/footer');
 	}
+	
 	
 	public function logout(){
 		header("Location: ".base_url());

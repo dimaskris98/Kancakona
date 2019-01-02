@@ -223,7 +223,7 @@ $(document).ready(function($) {
   });
 
   $('#r_tanggal').datepicker({
-	  'format': 'm/d/yyyy',
+	  'format': 'd/m/yyyy',
 	  'autoclose': true
 	});
 	$('#r_waktu').timepicker({

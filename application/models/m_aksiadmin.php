@@ -12,6 +12,14 @@ class M_aksiadmin extends CI_Model {
 		$data = $this->db->get_where('pemesanan',$where);
 		return($data->row());
 	}
+	public function getDetail($where){
+		$this->db->select('*');
+		$this->db->from('detail_pemesanan');
+		$this->db->join('menu','detail_pemesanan.no_menu = menu.no_menu');
+		$this->db->where($where);
+		$data = $this->db->get();
+		return($data->result());
+	}
 	public function getPemesanan2(){
 		$data = $this->db->get('pemesanan');
 		return($data->result());
@@ -19,13 +27,19 @@ class M_aksiadmin extends CI_Model {
 	
 	public function ubahTanggal($tgl){
 		
-		$a = date_create($tgl);
+		$a = date_create_from_format('d/m/Y',$tgl);
 		$b = date_format($a,'d .M Y');
 		$pattern = array(".jan",".feb",".mar",".apr",'.may',".jun",'.jul','.agu','.sep','.okt','.nov','.dec');
 		$replace = array("Januari","Februari","Maret","April",'Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
 		$b = str_ireplace($pattern,$replace,$b);
 		return $b;
 	}
+	public function delPemesanan($where){
+		$cek = $this->db->delete('pemesanan',$where);
+		return($cek);
+	}
+	
+	
 	//DATA MODEL EVENT
 	public function getEvent(){
 		$data = $this->db->get('event');
@@ -102,6 +116,21 @@ class M_aksiadmin extends CI_Model {
 	
 	public function delSaran($where){
 		$cek = $this->db->delete('saran',$where);
+	}
+	
+	//DATA PENGATURAN
+	public function getPengaturan(){
+		$this->db->limit(1);
+		$data = $this->db->get('pengaturan');
+		return($data->row());
+	}
+	public function updateSetting($data){
+		$this->db->where('id',1);
+		$cek = $this->db->update('pengaturan',$data);
+		
+		return $cek;
+		
+		
 	}
 }
 ?>
