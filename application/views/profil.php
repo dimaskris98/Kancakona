@@ -788,19 +788,21 @@
                 <h1 class="mb-4">Pilih Menu yang akan ditampilkan</h1>
               </div>
               
-              <div class="col-lg-4 mp-5">
-              <div class="row">
-              	<div class="col-sm-12 badge badge-primary center">
-              		<label style="text-align: ">Minuman</label>
+              <div class="col-lg-6 mp-5">
+              	<div class="row">
+              	<div class="col-md-12">
+              		<label class="full btn btn-primary">Minuman</label>
               	</div>
               </div>
-              	
               	<div class="row" style="overflow-y: auto; max-height: 300px">
-              	<?php 
-              		foreach($minuman as $row){
+              	<div class="col-sm-12">
+              		<h5 align="center">Kopi</h5>
+              	</div>
+              		<?php 
+              		foreach($kopi as $row){
 				?>
 					<div class="col-sm-6">
-						<label class=""><?php echo $row->nama ?></label>
+						<label><?php echo $row->nama ?></label>
 					</div>
 					<div class="col-sm-4" style="text-align: right">
 						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
@@ -813,18 +815,52 @@
 				<?php
 					}
 				?>
+				
+				<div class="col-sm-12">
+              		<h5 align="center">TEH</h5>
               	</div>
-                
-              </div>
-              <div class="col-lg-4 mp-5">
-              	<div class="row">
-              	<div class="col-sm-12 badge badge-primary center">
-              		<label style="text-align: ">Kopi</label>
-              	</div>
-              </div>
-              	<div class="row" style="overflow-y: auto; max-height: 300px">
               		<?php 
-              		foreach($kopi as $row){
+              		foreach($teh as $row){
+				?>
+					<div class="col-sm-6">
+						<label><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+				<div class="col-sm-12">
+              		<h5 align="center">Mojito & Soda</h5>
+              	</div>
+              		<?php 
+              		foreach($mojito as $row){
+				?>
+					<div class="col-sm-6">
+						<label><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+				<div class="col-sm-12">
+              		<h5 align="center">Frappe</h5>
+              	</div>
+              		<?php 
+              		foreach($frappe as $row){
 				?>
 					<div class="col-sm-6">
 						<label><?php echo $row->nama ?></label>
@@ -843,13 +879,36 @@
               	</div> 
               </div>
               
-              <div class="col-lg-4 mp-5">
+              <div class="col-lg-6 mp-5">
               	<div class="row">
-              	<div class="col-sm-12 badge badge-primary center">
-              		<label>Makanan</label>
+              	<div class="col-lg-12">
+              		<label class="full btn btn-primary">Makanan</label>
               	</div>
               </div>
               	<div class="row" style="overflow-y: auto; max-height: 300px">
+              	<div class="col-sm-12">
+              		<h5 align="center">Camilan</h5>
+              	</div>
+              	<?php 
+              		foreach($camilan as $row){
+				?>
+					<div class="col-sm-6">
+						<label><?php echo $row->nama ?></label>
+					</div>
+					<div class="col-sm-4" style="text-align: right">
+						<label>Rp. <?php echo number_format($row->harga,0,'','.') ?></label>
+					</div>
+					<div class="col-sm-1">
+						<input type="hidden" value="<?php echo $row->nama ;?>"/>
+						<input class="cMenu" type="checkbox" name="menu[]" value="<?php echo $row->no_menu ;?>"/>
+						<input type="hidden" value="<?php echo $row->harga ;?>"/>
+					</div>
+				<?php
+					}
+				?>
+              	<div class="col-sm-12">
+              		<h5 align="center">Makanan</h5>
+              	</div>
               		<?php 
               		foreach($makanan as $row){
 				?>
@@ -870,7 +929,7 @@
               	</div>
               </div>
               <div class="col-lg-12" style="padding-top:15px ">
-              	<button id="simpanMenu" data-dismiss="modal" class="btn btn-info" style="width: 100%">Simpan</button>
+              	<button id="simpanMenu" data-dismiss="modal" class="btn btn-primary" style="width: 100%">Simpan</button>
               </div>
               
             </div>

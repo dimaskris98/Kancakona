@@ -3,6 +3,10 @@
 	<settings><PM_URL><![CDATA[http://localhost/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
 	</lastopfiles>
 	<errors version="5.11">
+		<errfile name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\fpdf.php">
+			<error val="24;1591;27;1591;302;2;"/>
+			<error val="27;1667;30;1667;302;2;"/>
+		</errfile>
 		<errfile name="E:\School Project\htdocs\Kancakona\assets\css\style.css">
 			<error val="2;980;27;980;2502;1;"/>
 			<error val="2;981;23;981;2502;1;"/>
@@ -82,10 +86,226 @@
 		<todofile name="E:\School Project\htdocs\Kancakona\system\libraries\Xmlrpc.php">
 			<todo name="@todo - this needs to be made more general purpose" pos="6;1554"/>
 		</todofile>
+		<todofile name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamWrapper.php">
+			<todo name="todo    consider $options with STREAM_MKDIR_RECURSIVE" pos="8;807"/>
+		</todofile>
+		<todofile name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\PHPMailer.php">
+			<todo name="@TODO would be nice to use php://temp streams here" pos="17;2648"/>
+		</todofile>
 	</todoblock>
 	<dbgurls>
 	</dbgurls>
 	<filescache>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto7.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto7.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto6.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto6.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto5.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto5.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto4.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto4.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto3.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto3.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto2.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto2.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto1.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\tuto1.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\makefont.php" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\index.htm" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\countries.txt" crc="1546441457"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\calligra.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\20k_c2.txt" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\tutorial\20k_c1.txt" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\makefont\ttfparser.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\makefont\makefont.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\zapfdingbats.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\timesi.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\timesbi.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\timesb.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\times.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\symbol.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\helveticai.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\helveticabi.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\helveticab.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\helvetica.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\courieri.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\courierbi.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\courierb.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\font\courier.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\write.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\text.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\sety.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setxy.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setx.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\settopmargin.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\settitle.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\settextcolor.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setsubject.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setrightmargin.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setmargins.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setlink.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setlinewidth.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setleftmargin.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setkeywords.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setfontsize.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setfont.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setfillcolor.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setdrawcolor.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setdisplaymode.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setcreator.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setcompression.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setautopagebreak.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\setauthor.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\rect.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\pageno.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\output.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\multicell.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\ln.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\link.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\line.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\index.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\image.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\header.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\gety.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\getx.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\getstringwidth.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\getpagewidth.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\getpageheight.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\footer.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\error.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\close.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\cell.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\aliasnbpages.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\addpage.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\addlink.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\addfont.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\acceptpagebreak.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\doc\__construct.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\license.txt" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\install.txt" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\fpdf.php" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\fpdf.css" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\FAQ.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\setasign\fpdf\changelog.htm" crc="1546441456"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\SMTP.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\POP3.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\PHPMailer.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\OAuth.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\src\Exception.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-zh_cn.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-zh.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-vi.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-uk.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-tr.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-tl.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-sv.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-sr.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-sl.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-sk.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ru.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ro.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-pt_br.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-pt.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-pl.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-nl.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-nb.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ms.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-mg.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-lv.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-lt.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ko.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ka.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ja.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-it.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-id.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-hu.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-hr.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-hi.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-he.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-gl.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-fr.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-fo.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-fi.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-fa.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-et.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-es.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-eo.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-el.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-de.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-da.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-cs.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ch.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ca.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-bg.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-be.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ba.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-az.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-ar.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\language\phpmailer.lang-am.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\phpmailer\phpmailer\get_oauth_token.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\resources\filesystemcopy\withSubfolders\subfolder1\file1.txt" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\resources\filesystemcopy\withSubfolders\aFile.txt" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\visitor\vfsStreamStructureVisitorTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\visitor\vfsStreamPrintVisitorTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\visitor\vfsStreamAbstractVisitorTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\proxy\vfsStreamWrapperRecordingProxy.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamZipTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperWithoutRootTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperStreamSelectTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperSetOptionTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperQuotaTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperFlockTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperFileTimesTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperFileTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperDirTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperDirSeparatorTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperBaseTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamWrapperAlreadyRegisteredTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamUmaskTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamResolveIncludePathTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamGlobTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamFileTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamDirectoryTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamDirectoryIssue18TestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamContainerIteratorTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\vfsStreamAbstractContentTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\test\php\org\bovigo\vfs\QuotaTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\visitor\vfsStreamVisitor.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\visitor\vfsStreamStructureVisitor.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\visitor\vfsStreamPrintVisitor.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\visitor\vfsStreamAbstractVisitor.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamWrapper.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamFile.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamException.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamDirectory.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamContent.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamContainerIterator.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamContainer.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStreamAbstractContent.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\vfsStream.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\src\main\php\org\bovigo\vfs\Quota.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FilePermissionsExampleTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FilePermissionsExample.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FilemodeExampleTestCaseWithVfsStream.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FileModeExampleTestCaseOldWay.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FilemodeExample.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FailureExampleTestCase.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\FailureExample.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\ExampleTestCaseWithVfsStream.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\ExampleTestCaseOldWay.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\Example.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\examples\bootstrap.php" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\phpdoc.dist.xml" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\mikey179\vfsStream\.travis.yml" crc="1546441459"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\ClassLoader.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\autoload_static.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\autoload_real.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\autoload_psr4.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\autoload_namespaces.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\composer\autoload_classmap.php" crc="1546441640"/>
+		<file name="E:\School Project\htdocs\Kancakona\vendor\autoload.php" crc="1546441640"/>
 		<file name="E:\School Project\htdocs\Kancakona\user_guide\tutorial\static_pages.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\user_guide\tutorial\news_section.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\user_guide\tutorial\index.html" crc="1429869652"/>
@@ -380,7 +600,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Form_validation.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Encryption.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Encrypt.php" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Email.php" crc="1429869652"/>
+		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Email.php" crc="1546451147"/>
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Driver.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Cart.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\system\libraries\Calendar.php" crc="1429869652"/>
@@ -607,7 +827,7 @@
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\docs\assets\css\animate.css" crc="1524230530"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\docs\index.html" crc="1524230530"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\stylepreloader.css" crc="1543248636"/>
-		<file name="E:\School Project\htdocs\Kancakona\assets\css\style.css" crc="1543680351"/>
+		<file name="E:\School Project\htdocs\Kancakona\assets\css\style.css" crc="1546405951"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\owl.theme.default.min.css" crc="1514682744"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\owl.carousel.min.css" crc="1514682744"/>
 		<file name="E:\School Project\htdocs\Kancakona\assets\css\open-iconic-bootstrap.min.css" crc="1514682744"/>
@@ -691,11 +911,11 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\saran.php" crc="1544456711"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\reservasi.php" crc="1546250889"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\pengaturan.php" crc="1546244996"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newMenu.php" crc="1543494080"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newMenu.php" crc="1546405951"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\newEvent.php" crc="1544714195"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\menu.php" crc="1543494080"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\home.php" crc="1545636155"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\Form_Menu.php" crc="1543248636"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\Form_Menu.php" crc="1546405951"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\event.php" crc="1544702354"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\detPemesanan.php" crc="1546248576"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\konten\beranda.php" crc="1544555605"/>
@@ -706,22 +926,21 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\views\admin\Codelobster0.php" crc="1542039192"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\welcome_message.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\views\v_awal.php" crc="1541923754"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\views\profil.php" crc="1546252868"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\third_party\index.html" crc="1429869652"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\views\profil.php" crc="1546407855"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_login.php" crc="1541946604"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_awal.php" crc="1545834177"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\m_aksiadmin.php" crc="1546250057"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\models\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\logs\index.html" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\libraries\index.html" crc="1429869652"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\libraries\index.html" crc="1544060257"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\language\english\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\language\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\hooks\index.html" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\helpers\index.html" crc="1429869652"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\helpers\index.html" crc="1544060257"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\core\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Welcome.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\index.html" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Awal.php" crc="1546240956"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\controllers\Awal.php" crc="1546451263"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminSaran.php" crc="1544456765"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminPengaturan.php" crc="1546242299"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\controllers\AksiAdminPemesanan.php" crc="1546244911"/>
@@ -736,20 +955,20 @@
 		<file name="E:\School Project\htdocs\Kancakona\application\config\mimes.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\migration.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\memcached.php" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\config\index.html" crc="1429869652"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\config\index.html" crc="1544060257"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\hooks.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\foreign_chars.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\doctypes.php" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\database.php" crc="1541928690"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\constants.php" crc="1541926631"/>
-		<file name="E:\School Project\htdocs\Kancakona\application\config\config.php" crc="1545478862"/>
+		<file name="E:\School Project\htdocs\Kancakona\application\config\config.php" crc="1546439106"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\config\autoload.php" crc="1541946246"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\cache\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\cache\.htaccess" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\index.html" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\application\.htaccess" crc="1429869652"/>
 		<file name="E:\School Project\htdocs\Kancakona\license.txt" crc="1429869652"/>
-		<file name="E:\School Project\htdocs\Kancakona\kancakona.sql" crc="1544935593"/>
+		<file name="E:\School Project\htdocs\Kancakona\kancakona.sql" crc="1546405951"/>
 		<file name="E:\School Project\htdocs\Kancakona\index.php" crc="1541923358"/>
 		<file name="E:\School Project\htdocs\Kancakona\.htaccess" crc="1541929897"/>
 	</filescache>

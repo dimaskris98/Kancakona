@@ -7,7 +7,35 @@ class Awal extends CI_Controller {
 		parent::__construct();
 		$this->load->model('m_login');
 		$this->load->model('m_awal');
+		
+		
 	}
+	
+	public function mycontroller(){
+		
+		$config = Array(
+    'protocol' => 'smtp',
+    'smtp_debug'=> 1,
+    'smtp_host' => 'ssl://smtp.gmail.com',
+    'smtp_port' => 465,
+    'smtp_user' => 'dimasc1945@gmail.com',
+    'smtp_pass' => 'dimas12345',
+    'mailtype'  => 'html', 
+    'charset'   => 'iso-8859-1'
+);
+$this->load->library('email',$config);
+$this->email->set_newline("\r\n");
+  
+
+$this->email->from('dimasc1945@gmail.com', 'dimas');
+$this->email->to('dimascr1998@gmail.com');
+
+$this->email->subject('Email Test');
+$this->email->message('Testing the email class.');
+
+$this->email->send();
+echo $this->email->print_debugger();
+}
 
 	/**
 	 * Index Page for this controller.
